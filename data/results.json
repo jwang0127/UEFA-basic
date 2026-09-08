@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-09-08T20:53:18+08:00",
+    "updated_at": "2026-09-08T17:16:10+00:00",
     "matches_source": "https://match.uefa.com/v5/matches?competitionId=1&seasonYear=2027&phase=TOURNAMENT&order=DESC&offset=0&limit=200",
     "standings_source": "https://standings.uefa.com/v1/standings?competitionId=1&seasonYear=2027",
     "completed_matches": 0
@@ -8,32 +8,56 @@
   "results": {},
   "standings": [
     {
-      "key": "AEK Athens",
+      "key": "Aston Villa",
       "rank": 1,
-      "played": 0,
-      "won": 0,
+      "played": 1,
+      "won": 1,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 0,
+      "goals_for": 2,
+      "goals_against": 1,
+      "goal_difference": 1,
+      "points": 3
+    },
+    {
+      "key": "AEK Athens",
+      "rank": 2,
+      "played": 1,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "goals_for": 1,
       "goals_against": 0,
-      "goal_difference": 0,
+      "goal_difference": 1,
+      "points": 3
+    },
+    {
+      "key": "Club Brugge",
+      "rank": 35,
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goals_for": 1,
+      "goals_against": 2,
+      "goal_difference": -1,
+      "points": 0
+    },
+    {
+      "key": "LASK",
+      "rank": 36,
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goals_for": 0,
+      "goals_against": 1,
+      "goal_difference": -1,
       "points": 0
     },
     {
       "key": "Arsenal",
-      "rank": 1,
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goals_for": 0,
-      "goals_against": 0,
-      "goal_difference": 0,
-      "points": 0
-    },
-    {
-      "key": "Aston Villa",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -45,7 +69,7 @@
     },
     {
       "key": "Atleti",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -57,7 +81,7 @@
     },
     {
       "key": "Barcelona",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -69,7 +93,7 @@
     },
     {
       "key": "Bayern München",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -81,19 +105,7 @@
     },
     {
       "key": "Bodø/Glimt",
-      "rank": 1,
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goals_for": 0,
-      "goals_against": 0,
-      "goal_difference": 0,
-      "points": 0
-    },
-    {
-      "key": "Club Brugge",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -105,7 +117,7 @@
     },
     {
       "key": "Como",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -117,7 +129,7 @@
     },
     {
       "key": "Fenerbahçe",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -129,7 +141,7 @@
     },
     {
       "key": "Feyenoord",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -141,7 +153,7 @@
     },
     {
       "key": "Galatasaray",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -153,19 +165,7 @@
     },
     {
       "key": "Inter",
-      "rank": 1,
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goals_for": 0,
-      "goals_against": 0,
-      "goal_difference": 0,
-      "points": 0
-    },
-    {
-      "key": "LASK",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -177,7 +177,7 @@
     },
     {
       "key": "Leipzig",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -189,7 +189,7 @@
     },
     {
       "key": "Lens",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -201,7 +201,7 @@
     },
     {
       "key": "Lille",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -213,7 +213,7 @@
     },
     {
       "key": "Liverpool",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -225,7 +225,7 @@
     },
     {
       "key": "Man City",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -237,7 +237,7 @@
     },
     {
       "key": "Napoli",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -249,7 +249,7 @@
     },
     {
       "key": "PSV",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -261,7 +261,7 @@
     },
     {
       "key": "Paris",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -273,7 +273,7 @@
     },
     {
       "key": "Porto",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -285,7 +285,7 @@
     },
     {
       "key": "Real Betis",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -297,7 +297,7 @@
     },
     {
       "key": "Real Madrid",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -309,7 +309,7 @@
     },
     {
       "key": "Roma",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -321,7 +321,7 @@
     },
     {
       "key": "Sabah",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -333,7 +333,7 @@
     },
     {
       "key": "Shakhtar",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -345,7 +345,7 @@
     },
     {
       "key": "Slavia Praha",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -357,7 +357,7 @@
     },
     {
       "key": "Sporting CP",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -369,7 +369,7 @@
     },
     {
       "key": "Stuttgart",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -381,7 +381,7 @@
     },
     {
       "key": "Viking",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
@@ -393,7 +393,7 @@
     },
     {
       "key": "Villarreal",
-      "rank": 1,
+      "rank": 3,
       "played": 0,
       "won": 0,
       "drawn": 0,
