@@ -201,7 +201,7 @@ def render_index(data: dict) -> str:
     result_data = load_results()
     teams = sorted(data["teams"].values(), key=lambda x: x["name_zh"])
     cards = "".join(
-        f'<li><a href="teams/{SLUGS[t["key"]]}.html"><span>{esc(t["name_zh"])}</span><b aria-hidden="true">↗</b></a></li>'
+        f'<li class="team-card" data-name="{esc(t["name_zh"])}" data-ucl="{esc(t["last_ucl"])}" data-association="{esc(t["association"])}"><a href="teams/{SLUGS[t["key"]]}.html"><span><strong>{esc(t["name_zh"])}</strong><small>{esc(t["last_ucl"])} · {esc(t["association"])}</small></span><b aria-hidden="true">↗</b></a></li>'
         for t in teams
     )
     data_date = datetime.strptime(data["meta"]["data_date"], "%Y-%m-%d")
@@ -221,7 +221,8 @@ def render_index(data: dict) -> str:
 <main id="main" class="home-main"><section class="home-section month-section" aria-labelledby="month-title"><div class="home-section-head"><div><p>赛程总览</p><h2 id="month-title">{data_date.month}月比赛日</h2></div><span>{len(month_games)}场比赛 · 所有队名均可跳转</span></div>
 <div class="month-board">{match_days}</div></section>
 {"" if not result_data.get('results') else render_latest_results(data, result_data)}
-<section class="home-section team-section" aria-labelledby="teams-title"><div class="home-section-head"><div><p>俱乐部档案</p><h2 id="teams-title">36支球队</h2></div><span>赛程、转会、教练</span></div><nav aria-label="36支球队"><ol class="team-grid">{cards}</ol></nav></section></main>
+<section class="home-section team-section" aria-labelledby="teams-title"><div class="home-section-head"><div><p>俱乐部档案</p><h2 id="teams-title">找到你要看的球队</h2></div><span><b id="team-count">36</b> / 36 支球队</span></div><div class="team-tools"><label class="search-box"><span>搜索球队</span><input id="team-search" type="search" placeholder="输入中文队名" autocomplete="off"></label><label class="filter-box"><span>上赛季欧冠成绩</span><select id="team-filter"><option value="all">全部球队</option><option value="欧冠冠军">欧冠冠军</option><option value="欧冠亚军">欧冠亚军</option><option value="欧冠四强">欧冠四强</option><option value="欧冠八强">欧冠八强</option><option value="欧冠16强">欧冠16强</option><option value="欧冠联赛阶段">联赛阶段</option><option value="欧冠淘汰赛附加赛">淘汰赛附加赛</option><option value="未参加2025-26赛季欧冠">上赛季未参赛</option></select></label><button class="clear-filter" id="clear-team-filter" type="button">清除筛选</button></div><nav aria-label="36支球队"><ol class="team-grid" id="team-directory">{cards}</ol></nav><p class="directory-empty" id="directory-empty" hidden>没有找到匹配的球队，请换一个关键词或筛选条件。</p></section></main>
+<script>const search=document.querySelector('#team-search'),filter=document.querySelector('#team-filter'),cardsList=[...document.querySelectorAll('.team-card')],count=document.querySelector('#team-count'),empty=document.querySelector('#directory-empty');function filterTeams(){{const q=search.value.trim().toLowerCase(),f=filter.value;let shown=0;cardsList.forEach(card=>{{const okName=card.dataset.name.toLowerCase().includes(q),okFilter=f==='all'||card.dataset.ucl===f;card.hidden=!(okName&&okFilter);if(okName&&okFilter)shown++}});count.textContent=shown;empty.hidden=shown!==0}}search.addEventListener('input',filterTeams);filter.addEventListener('change',filterTeams);document.querySelector('#clear-team-filter').addEventListener('click',()=>{{search.value='';filter.value='all';filterTeams();search.focus()}});</script>
 <footer class="site-footer"><span>欧洲冠军联赛 · 2026—27</span><span>离线静态资料站</span></footer>"""
     return layout("2026-27赛季欧冠36队档案", body, description="2026-27赛季欧冠联赛阶段36支球队中文资料站")
 
