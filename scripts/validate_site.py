@@ -54,8 +54,10 @@ def main() -> None:
     parser = LinkParser()
     parser.feed(index)
     team_links = [link for link in parser.links if link.startswith("teams/")]
-    assert len(team_links) == 36 and len(set(team_links)) == 36
-    for link in team_links:
+    unique_team_links = set(team_links)
+    assert len(unique_team_links) == 36
+    assert len(team_links) > 36, "首页应同时包含球队入口与本月赛程跳转"
+    for link in unique_team_links:
         assert (ROOT / link).exists(), link
 
     forbidden = re.compile(r"待核|实力评分|出线概率|赛程难度|胜率预测|夺冠概率")

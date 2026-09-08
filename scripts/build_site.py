@@ -125,11 +125,23 @@ def render_index(data: dict) -> str:
         f'<li><a href="teams/{SLUGS[t["key"]]}.html"><span>{esc(t["name_zh"])}</span><b aria-hidden="true">↗</b></a></li>'
         for t in teams
     )
+    data_date = datetime.strptime(data["meta"]["data_date"], "%Y-%m-%d")
+    month_games = [game for game in data["fixtures"] if game["date"].startswith(data_date.strftime("%Y-%m"))]
+    games_by_day: dict[str, list[dict]] = defaultdict(list)
+    for game in month_games:
+        games_by_day[game["date"]].append(game)
+    match_days = "".join(
+        f"""<section class="match-day"><div class="day-label"><time datetime="{date}"><b>{date[8:10]}</b><span>{data_date.month}月{int(date[8:10])}日</span></time><small>{len(games)}场</small></div>
+<ol class="match-list">{"".join(f'''<li class="month-match"><time>{esc(game['time_cet'])}</time><div class="match-pair"><a href="teams/{SLUGS[game['home_en']]}.html">{esc(game['home'])}</a><span>vs</span><a href="teams/{SLUGS[game['away_en']]}.html">{esc(game['away'])}</a></div></li>''' for game in sorted(games, key=lambda x: (x['time_cet'], x['id'])))}</ol></section>"""
+        for date, games in sorted(games_by_day.items())
+    )
     body = f"""
 <header class="home-hero"><div class="eyebrow">2026—27 · UEFA CHAMPIONS LEAGUE</div>
 <div class="hero-mark" aria-hidden="true">36</div><h1>欧冠联赛阶段<br>俱乐部档案</h1>
-<p>选择球队，查看赛程、转会与教练资料。</p></header>
-<main id="main" class="home-main"><nav aria-label="36支球队"><ol class="team-grid">{cards}</ol></nav></main>
+<p>先看本月比赛，再进入球队档案。</p></header>
+<main id="main" class="home-main"><section class="home-section month-section" aria-labelledby="month-title"><div class="home-section-head"><div><p>赛程总览</p><h2 id="month-title">{data_date.month}月比赛日</h2></div><span>{len(month_games)}场比赛 · 所有队名均可跳转</span></div>
+<div class="month-board">{match_days}</div></section>
+<section class="home-section team-section" aria-labelledby="teams-title"><div class="home-section-head"><div><p>俱乐部档案</p><h2 id="teams-title">36支球队</h2></div><span>赛程、转会、教练</span></div><nav aria-label="36支球队"><ol class="team-grid">{cards}</ol></nav></section></main>
 <footer class="site-footer"><span>欧洲冠军联赛 · 2026—27</span><span>离线静态资料站</span></footer>"""
     return layout("2026-27赛季欧冠36队档案", body, description="2026-27赛季欧冠联赛阶段36支球队中文资料站")
 
@@ -149,9 +161,10 @@ def render_fixtures(team: dict, fixtures: list[dict]) -> str:
     items = []
     for game in games:
         venue_cls = "home" if game["venue"] == "主场" else "away"
+        opponent_key = game["away_en"] if game["venue"] == "主场" else game["home_en"]
         items.append(f"""<li class="fixture">
 <time datetime="{game['date']}"><small>{game['date'][5:7]}/{game['date'][8:10]}</small>{format_date(game['date'])}</time>
-<span class="venue {venue_cls}">{game['venue']}</span><strong>{esc(game['opponent'])}</strong>
+<span class="venue {venue_cls}">{game['venue']}</span><strong><a class="opponent-link" href="{SLUGS[opponent_key]}.html">{esc(game['opponent'])}</a></strong>
 <span class="kickoff">{esc(game['time_cet'])} 中欧时间</span></li>""")
     return "".join(items)
 
