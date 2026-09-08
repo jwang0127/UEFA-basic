@@ -1,0 +1,33 @@
+name: 同步官方赛果与比赛日追踪
+
+on:
+  schedule:
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: 同步 UEFA 官方数据
+        run: python scripts/update_results.py
+      - name: 重新生成静态页面
+        run: python scripts/build_site.py
+      - name: 执行完整校验
+        run: python scripts/validate_site.py
+      - name: 提交有变化的数据
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/results.json index.html standings.html matchdays.html teams matchdays matches
+          git diff --cached --quiet || git commit -m 'data: sync UEFA results and matchday reports'
+          git push

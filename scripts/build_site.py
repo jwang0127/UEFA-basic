@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "site_data.json"
+RESULTS = ROOT / "data" / "results.json"
 TEAMS_DIR = ROOT / "teams"
 ASSETS_DIR = ROOT / "assets"
 
@@ -119,7 +120,85 @@ def layout(title: str, body: str, *, depth: int = 0, description: str = "") -> s
 </body></html>"""
 
 
+def load_results() -> dict:
+    if not RESULTS.exists():
+        return {"meta": {"completed_matches": 0}, "results": {}, "standings": [], "reports": {}}
+    return json.loads(RESULTS.read_text(encoding="utf-8"))
+
+
+def stat(report: dict, side: str, key: str, fallback: str = "官方统计尚未发布") -> str:
+    value = (report.get(f"{side}_stats") or {}).get(key)
+    return str(value) if value is not None else fallback
+
+
+def report_cell(report: dict, side: str, kind: str) -> str:
+    s = report.get(f"{side}_stats") or {}
+    if kind == "attack":
+        return f"进球 {stat(report, side, 'goals')} · 射门 {stat(report, side, 'attempts')} · 射正 {stat(report, side, 'attempts_on_target')} · 控球 {stat(report, side, 'ball_possession')}%"
+    if kind == "defense":
+        return f"扑救 {stat(report, side, 'saves')} · 抢断 {stat(report, side, 'tackles')} · 犯规 {stat(report, side, 'fouls_committed')}"
+    if kind == "injuries":
+        return report.get("injuries", {}).get(side, "本场未见官方伤停通报")
+    if kind == "cards":
+        return f"黄牌 {stat(report, side, 'yellow_cards', '0')} · 红牌 {stat(report, side, 'red_cards', '0')}"
+    lineup = (report.get("lineups") or {}).get(side) or {}
+    coach = "、".join(lineup.get("coaches") or []) or "官方阵容资料未列教练"
+    return f"首发名单 {lineup.get('starting_count', '—')} 人 · 场边教练：{coach}"
+
+
+def report_team_link(key: str, data: dict, depth: int = 0) -> str:
+    prefix = "../" * depth
+    return f'<a class="report-team" href="{prefix}teams/{SLUGS[key]}.html">{esc(data["teams"][key]["name_zh"])}</a>'
+
+
+def render_report_row(game: dict, report: dict, data: dict, depth: int = 0) -> str:
+    home = report_team_link(game["home_en"], data, depth)
+    away = report_team_link(game["away_en"], data, depth)
+    detail = f'{"../" * depth}matches/{game["id"]}.html'
+    duel = f'<div class="report-link"><span><a href="{detail}">{home}</a> <b>{game.get("home_score", "—")} — {game.get("away_score", "—")}</b> <a href="{detail}">{away}</a></span><small><a href="{detail}">查看单场简报 ↗</a></small></div>'
+    cells = [duel]
+    for kind in ("attack", "defense", "injuries", "cards", "tactics"):
+        cells.append(f'<div class="report-lines"><p><span>主</span>{esc(report_cell(report, "home", kind))}</p><p><span>客</span>{esc(report_cell(report, "away", kind))}</p></div>')
+    return "<tr>" + "".join(f"<td>{cell}</td>" for cell in cells) + "</tr>"
+
+
+def render_matchday_page(date: str, games: list[dict], data: dict, result_data: dict) -> str:
+    rows = "".join(render_report_row(g, result_data.get("reports", {}).get(str(g["id"]), {}), data, 1) for g in games)
+    body = f'''<header class="team-top"><a class="back" href="../matchdays.html">← 返回比赛日追踪</a><span>官方赛果与比赛简报</span></header>
+<main id="main" class="tracking-main"><section class="tracking-hero"><p>比赛日追踪 · {esc(format_date(date))}</p><h1>{esc(format_date(date))}</h1><p>按对手汇总进攻、防守、伤停、牌面与教练战术资料。每项只展示官方比赛资料。</p></section>
+<section class="report-card"><div class="table-scroll"><table class="report-table"><thead><tr><th>比赛</th><th>进攻情况</th><th>防守情况</th><th>伤停情况</th><th>红黄牌</th><th>教练战术</th></tr></thead><tbody>{rows}</tbody></table></div><p class="data-note">统计与阵容资料来源：UEFA官方比赛接口；未发布项目按页面说明显示。</p></section></main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>'''
+    return layout(f"{format_date(date)}比赛日追踪", body, depth=1, description=f"{format_date(date)}欧冠比赛日五项比赛追踪")
+
+
+def render_match_page(game: dict, report: dict, data: dict) -> str:
+    h = data["teams"][game["home_en"]]["name_zh"]
+    a = data["teams"][game["away_en"]]["name_zh"]
+    sections = []
+    for title, kind in (("进攻情况", "attack"), ("防守情况", "defense"), ("伤停情况", "injuries"), ("红黄牌", "cards"), ("教练战术", "tactics")):
+        sections.append(f'<section class="match-detail-section"><h2>{title}</h2><div class="match-side"><div><h3>{esc(h)}</h3><p>{esc(report_cell(report, "home", kind))}</p></div><div><h3>{esc(a)}</h3><p>{esc(report_cell(report, "away", kind))}</p></div></div></section>')
+    body = f'''<header class="team-top"><a class="back" href="../matchdays/{game["date"]}.html">← 返回比赛日</a><span>官方比赛简报</span></header><main id="main" class="tracking-main"><section class="tracking-hero match-hero"><p>{esc(format_date(game["date"]))} · {esc(game["time_cet"])} 中欧时间</p><h1>{esc(h)} <span>{game.get("home_score", "—")} — {game.get("away_score", "—")}</span> {esc(a)}</h1></section>{"".join(sections)}</main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>'''
+    return layout(f"{h} vs {a}｜比赛简报", body, depth=1, description=f"{h}对阵{a}的比赛日五项资料简报")
+
+
+def render_matchdays_index(data: dict, result_data: dict) -> str:
+    by_date = defaultdict(list)
+    fixture_map = {str(g["id"]): g for g in data["fixtures"]}
+    for match_id, result in result_data.get("results", {}).items():
+        game = fixture_map.get(str(match_id))
+        if game:
+            by_date[game["date"]].append({**game, **result})
+    cards = "".join(f'<a class="matchday-card" href="matchdays/{date}.html"><span>{esc(format_date(date))}</span><b>{len(games)}场</b><small>查看五项比赛追踪 ↗</small></a>' for date, games in sorted(by_date.items(), reverse=True))
+    empty = '<div class="tracking-empty">首场比赛结束后，这里会自动生成按比赛日整理的五项追踪表。</div>' if not cards else cards
+    body = f'''<header class="team-top"><a class="back" href="index.html">← 返回首页</a><span>2026—27 · 欧冠联赛阶段</span></header><main id="main" class="tracking-main"><section class="tracking-hero"><p>比赛日追踪 · 自动更新</p><h1>比赛日简报</h1><p>每个比赛日一张表，按对手记录进攻、防守、伤停、红黄牌与教练战术。</p></section><section class="matchday-grid">{empty}</section></main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>'''
+    return layout("2026-27赛季欧冠比赛日追踪", body, description="按比赛日和对手整理欧冠五项比赛资料")
+
+
+def result_for(game: dict, results: dict) -> dict | None:
+    return results.get(str(game["id"]))
+
+
 def render_index(data: dict) -> str:
+    result_data = load_results()
     teams = sorted(data["teams"].values(), key=lambda x: x["name_zh"])
     cards = "".join(
         f'<li><a href="teams/{SLUGS[t["key"]]}.html"><span>{esc(t["name_zh"])}</span><b aria-hidden="true">↗</b></a></li>'
@@ -138,12 +217,40 @@ def render_index(data: dict) -> str:
     body = f"""
 <header class="home-hero"><div class="eyebrow">2026—27 · UEFA CHAMPIONS LEAGUE</div>
 <div class="hero-mark" aria-hidden="true">36</div><h1>欧冠联赛阶段<br>俱乐部档案</h1>
-<p>先看本月比赛，再进入球队档案。</p></header>
+<p>先看本月比赛，再进入球队档案。</p><nav class="home-hero-links"><a href="standings.html">查看联赛积分榜 <b>↗</b></a><a href="matchdays.html">比赛日追踪 <b>↗</b></a></nav></header>
 <main id="main" class="home-main"><section class="home-section month-section" aria-labelledby="month-title"><div class="home-section-head"><div><p>赛程总览</p><h2 id="month-title">{data_date.month}月比赛日</h2></div><span>{len(month_games)}场比赛 · 所有队名均可跳转</span></div>
 <div class="month-board">{match_days}</div></section>
+{"" if not result_data.get('results') else render_latest_results(data, result_data)}
 <section class="home-section team-section" aria-labelledby="teams-title"><div class="home-section-head"><div><p>俱乐部档案</p><h2 id="teams-title">36支球队</h2></div><span>赛程、转会、教练</span></div><nav aria-label="36支球队"><ol class="team-grid">{cards}</ol></nav></section></main>
 <footer class="site-footer"><span>欧洲冠军联赛 · 2026—27</span><span>离线静态资料站</span></footer>"""
     return layout("2026-27赛季欧冠36队档案", body, description="2026-27赛季欧冠联赛阶段36支球队中文资料站")
+
+
+def render_latest_results(data: dict, result_data: dict) -> str:
+    teams = data["teams"]
+    results = list(result_data.get("results", {}).values())
+    results.sort(key=lambda item: (item.get("date") or "", item["id"]), reverse=True)
+    rows = []
+    for item in results[:8]:
+        rows.append(f"<li><time>{esc(item.get('date', ''))}</time><a href=\"teams/{SLUGS[item['home_en']]}.html\">{esc(teams[item['home_en']]['name_zh'])}</a><b>{item['home_score']} — {item['away_score']}</b><a href=\"teams/{SLUGS[item['away_en']]}.html\">{esc(teams[item['away_en']]['name_zh'])}</a><a class=\"report-link\" href=\"matches/{item['id']}.html\">五项简报 ↗</a></li>")
+    return f"""<section class="home-section latest-section" aria-labelledby="latest-title"><div class="home-section-head"><div><p>已结束比赛</p><h2 id="latest-title">最新赛果</h2></div><span>已同步{result_data['meta'].get('completed_matches', len(results))}场官方赛果 · <a href=\"matchdays.html\">查看比赛日简报</a></span></div><ol class="latest-results">{''.join(rows)}</ol></section>"""
+
+
+def render_standings(data: dict, result_data: dict) -> str:
+    team_map = data["teams"]
+    standings = {row["key"]: row for row in result_data.get("standings", [])}
+    rows = []
+    for key, team in sorted(team_map.items(), key=lambda pair: (standings.get(pair[0], {}).get("rank", 999) if standings.get(pair[0], {}).get("played", 0) else 999, pair[1]["name_zh"])):
+        row = standings.get(key, {})
+        played = row.get("played", 0)
+        rank = row.get("rank") if played else "—"
+        rows.append(f"""<tr><th scope="row">{rank}</th><td><a class="table-team-link" href="teams/{SLUGS[key]}.html">{esc(team['name_zh'])}</a></td><td>{played}</td><td>{row.get('won', 0)}</td><td>{row.get('drawn', 0)}</td><td>{row.get('lost', 0)}</td><td>{row.get('goals_for', 0)}</td><td>{row.get('goals_against', 0)}</td><td class="gd">{row.get('goal_difference', 0):+d}</td><td class="points">{row.get('points', 0)}</td></tr>""")
+    completed = result_data.get("meta", {}).get("completed_matches", 0)
+    updated = result_data.get("meta", {}).get("updated_at", "尚未同步")
+    body = f"""<header class="team-top"><a class="back" href="index.html">← 返回首页</a><span>2026—27 · 欧冠联赛阶段</span></header>
+<main id="main" class="standings-main"><section class="standings-hero"><p>联赛阶段 · 官方实时汇总</p><h1>积分榜</h1><div class="standings-meta"><span>已结束比赛 <b>{completed}</b></span><span>数据同步 <b>{esc(updated[:16].replace('T', ' '))}</b></span></div></section>
+<section class="standings-card"><div class="table-scroll"><table class="standings-table"><thead><tr><th>排名</th><th>球队</th><th>场</th><th>胜</th><th>平</th><th>负</th><th>进球</th><th>失球</th><th>净胜球</th><th>积分</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div><p class="data-note">排名、积分、进失球与净胜球来自 UEFA 官方积分榜；比赛结束后由自动任务同步。</p></section></main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>"""
+    return layout("2026-27赛季欧冠积分榜", body, description="2026-27赛季欧冠联赛阶段官方积分榜、进失球与净胜球")
 
 
 def fixture_for(team: dict, fixtures: list[dict]) -> list[dict]:
@@ -156,15 +263,17 @@ def fixture_for(team: dict, fixtures: list[dict]) -> list[dict]:
     return sorted(games, key=lambda x: (x["date"], x["time_cet"]))
 
 
-def render_fixtures(team: dict, fixtures: list[dict]) -> str:
+def render_fixtures(team: dict, fixtures: list[dict], results: dict) -> str:
     games = fixture_for(team, fixtures)
     items = []
     for game in games:
         venue_cls = "home" if game["venue"] == "主场" else "away"
         opponent_key = game["away_en"] if game["venue"] == "主场" else game["home_en"]
+        score = result_for(game, results)
+        score_text = f"<span class=\"fixture-score\">{score['home_score']} — {score['away_score']}</span>" if score else "<span class=\"fixture-score upcoming\">未开赛</span>"
         items.append(f"""<li class="fixture">
 <time datetime="{game['date']}"><small>{game['date'][5:7]}/{game['date'][8:10]}</small>{format_date(game['date'])}</time>
-<span class="venue {venue_cls}">{game['venue']}</span><strong><a class="opponent-link" href="{SLUGS[opponent_key]}.html">{esc(game['opponent'])}</a></strong>
+<span class="venue {venue_cls}">{game['venue']}</span><strong><a class="opponent-link" href="{SLUGS[opponent_key]}.html">{esc(game['opponent'])}</a></strong>{score_text}
 <span class="kickoff">{esc(game['time_cet'])} 中欧时间</span></li>""")
     return "".join(items)
 
@@ -215,12 +324,16 @@ def render_coach(team: dict) -> str:
 <p><b>阵型与打法结构</b>{esc(coach_style(manager.get('formation', '')))}</p></div></div>"""
 
 
-def render_team_page(team: dict, all_teams: list[dict], fixtures: list[dict]) -> str:
+def render_team_page(team: dict, all_teams: list[dict], fixtures: list[dict], result_data: dict) -> str:
     idx = next(i for i, item in enumerate(all_teams) if item["key"] == team["key"])
     prev_team = all_teams[(idx - 1) % len(all_teams)]
     next_team = all_teams[(idx + 1) % len(all_teams)]
     coefficient = team.get("coefficient_rank")
     coeff_label = f"第{coefficient}位" if coefficient else "本赛季新列入"
+    standing = next((row for row in result_data.get("standings", []) if row["key"] == team["key"]), {})
+    played = standing.get("played", 0)
+    rank = standing.get("rank") if played else "—"
+    record_markup = f"""<section class="team-record" aria-label="当前联赛阶段统计"><div><span>当前排名</span><b>{rank}</b></div><div><span>已赛</span><b>{played}</b></div><div><span>胜 / 平 / 负</span><b>{standing.get('won', 0)} / {standing.get('drawn', 0)} / {standing.get('lost', 0)}</b></div><div><span>进球 / 失球</span><b>{standing.get('goals_for', 0)} / {standing.get('goals_against', 0)}</b></div><div><span>净胜球</span><b>{standing.get('goal_difference', 0):+d}</b></div><div><span>积分</span><b>{standing.get('points', 0)}</b></div></section>"""
     body = f"""
 <header class="team-top"><a class="back" href="../index.html">← 返回36队</a><span>2026—27 · 欧冠联赛阶段</span></header>
 <main id="main"><section class="club-hero"><div class="club-index">{idx + 1:02d}</div><p>{esc(team['official_name'])}</p>
@@ -229,8 +342,7 @@ def render_team_page(team: dict, all_teams: list[dict], fixtures: list[dict]) ->
 <div><span>阵容总身价</span><b>€{team['market_value_m']:,.2f}m</b></div>
 <div><span>UEFA系数排名</span><b>{coeff_label}</b></div>
 <div><span>上赛季欧冠</span><b>{esc(team['last_ucl'])}</b></div></div></section>
-<section class="content-section route-section"><div class="section-head"><span>01</span><div><p>联赛阶段</p><h2>八场比赛</h2></div></div>
-<ol class="fixture-route">{render_fixtures(team, fixtures)}</ol></section>
+<section class="content-section route-section"><div class="section-head"><span>01</span><div><p>联赛阶段</p><h2>当前战绩</h2></div></div>{record_markup}<ol class="fixture-route">{render_fixtures(team, fixtures, result_data.get('results', {}))}</ol></section>
 <section class="content-section"><div class="section-head"><span>02</span><div><p>2026年夏季窗口</p><h2>转会明细</h2></div></div>{render_transfers(team)}</section>
 <section class="content-section coach-section"><div class="section-head"><span>03</span><div><p>教练档案</p><h2>现任主教练</h2></div></div>{render_coach(team)}</section>
 <nav class="page-switch" aria-label="切换球队"><a href="{SLUGS[prev_team['key']]}.html"><small>上一队</small>{esc(prev_team['name_zh'])}</a>
@@ -241,12 +353,30 @@ def render_team_page(team: dict, all_teams: list[dict], fixtures: list[dict]) ->
 
 def main() -> None:
     data = json.loads(DATA.read_text(encoding="utf-8"))
+    result_data = load_results()
     TEAMS_DIR.mkdir(parents=True, exist_ok=True)
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     (ROOT / "index.html").write_text(render_index(data), encoding="utf-8")
+    (ROOT / "standings.html").write_text(render_standings(data, result_data), encoding="utf-8")
+    (ROOT / "matchdays.html").write_text(render_matchdays_index(data, result_data), encoding="utf-8")
+    matchdays_dir = ROOT / "matchdays"
+    matches_dir = ROOT / "matches"
+    matchdays_dir.mkdir(exist_ok=True)
+    matches_dir.mkdir(exist_ok=True)
+    fixture_map = {str(g["id"]): g for g in data["fixtures"]}
+    by_date: dict[str, list[dict]] = defaultdict(list)
+    for match_id, result in result_data.get("results", {}).items():
+        game = fixture_map.get(str(match_id))
+        if game:
+            full = {**game, **result}
+            by_date[game["date"]].append(full)
+            report = result_data.get("reports", {}).get(str(match_id), {})
+            (matches_dir / f"{match_id}.html").write_text(render_match_page(full, report, data), encoding="utf-8")
+    for date, games in by_date.items():
+        (matchdays_dir / f"{date}.html").write_text(render_matchday_page(date, games, data, result_data), encoding="utf-8")
     all_teams = sorted(data["teams"].values(), key=lambda x: x["name_zh"])
     for team in all_teams:
-        page = render_team_page(team, all_teams, data["fixtures"])
+        page = render_team_page(team, all_teams, data["fixtures"], result_data)
         (TEAMS_DIR / f"{SLUGS[team['key']]}.html").write_text(page, encoding="utf-8")
     print(f"已生成首页与{len(all_teams)}个球队子页面")
 

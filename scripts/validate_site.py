@@ -50,6 +50,8 @@ def main() -> None:
 
     pages = sorted((ROOT / "teams").glob("*.html"))
     assert len(pages) == 36, len(pages)
+    assert (ROOT / "standings.html").exists()
+    assert (ROOT / "matchdays.html").exists()
     index = (ROOT / "index.html").read_text(encoding="utf-8")
     parser = LinkParser()
     parser.feed(index)
@@ -61,13 +63,19 @@ def main() -> None:
         assert (ROOT / link).exists(), link
 
     forbidden = re.compile(r"待核|实力评分|出线概率|赛程难度|胜率预测|夺冠概率")
-    for page in [ROOT / "index.html", *pages]:
+    result_data = json.loads((ROOT / "data" / "results.json").read_text(encoding="utf-8")) if (ROOT / "data" / "results.json").exists() else {"results": {}, "reports": {}}
+    for page in [ROOT / "index.html", ROOT / "standings.html", ROOT / "matchdays.html", *pages, *(ROOT / "matchdays").glob("*.html"), *(ROOT / "matches").glob("*.html")]:
         text = page.read_text(encoding="utf-8")
         assert not forbidden.search(text), page
         if page.parent.name == "teams":
             assert text.count('class="fixture"') == 8, page
             assert "轮次" not in text, page
             assert "€" in text and "现任主教练" in text and "转会明细" in text
+    assert set(result_data.get("reports", {})) <= set(result_data.get("results", {}))
+    for date_page in (ROOT / "matchdays").glob("*.html"):
+        text = date_page.read_text(encoding="utf-8")
+        for heading in ("进攻情况", "防守情况", "伤停情况", "红黄牌", "教练战术"):
+            assert heading in text, date_page
     for team in teams.values():
         assert team["arrivals"] and team["departures"]
         assert team["managers"] and team["market_value_m"] and team["world_rank"]
@@ -76,7 +84,7 @@ def main() -> None:
             assert item["position_zh"] and item["impact"]
             if item["fee_m"] is not None:
                 assert isinstance(item["fee_m"], (int, float))
-    print("通过：36队、144场、每队8场/4主4客、无同协会与重复对阵、36个子页面、转会教练与禁用词检查")
+    print("通过：36队、144场、每队8场/4主4客、无同协会与重复对阵、球队/积分榜/比赛日页面、转会教练与禁用词检查")
 
 
 if __name__ == "__main__":
