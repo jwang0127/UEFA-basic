@@ -1,0 +1,5 @@
+data/raw_cache/
+data/team_cache/
+qa-*.png
+__pycache__/
+*.pyc
