@@ -342,7 +342,7 @@ def render_team_page(team: dict, all_teams: list[dict], fixtures: list[dict], re
     standing = next((row for row in result_data.get("standings", []) if row["key"] == team["key"]), {})
     played = standing.get("played", 0)
     rank = standing.get("rank") if played else "—"
-    record_markup = f"""<section class="team-record" aria-label="当前联赛阶段统计"><div><span>当前排名</span><b>{rank}</b></div><div><span>已赛</span><b>{played}</b></div><div><span>胜 / 平 / 负</span><b>{standing.get('won', 0)} / {standing.get('drawn', 0)} / {standing.get('lost', 0)}</b></div><div><span>进球 / 失球</span><b>{standing.get('goals_for', 0)} / {standing.get('goals_against', 0)}</b></div><div><span>净胜球</span><b>{standing.get('goal_difference', 0):+d}</b></div><div><span>积分</span><b>{standing.get('points', 0)}</b></div></section>"""
+    record_markup = f"""<div class="table-scroll team-record"><table class="team-record-table" aria-label="当前联赛阶段统计"><thead><tr><th>当前排名</th><th>已赛</th><th>胜</th><th>平</th><th>负</th><th>进球</th><th>失球</th><th>净胜球</th><th>积分</th></tr></thead><tbody><tr><td>{rank}</td><td>{played}</td><td>{standing.get('won', 0)}</td><td>{standing.get('drawn', 0)}</td><td>{standing.get('lost', 0)}</td><td>{standing.get('goals_for', 0)}</td><td>{standing.get('goals_against', 0)}</td><td>{standing.get('goal_difference', 0):+d}</td><td class="record-points">{standing.get('points', 0)}</td></tr></tbody></table></div>"""
     body = f"""
 <header class="team-top"><a class="back" href="../index.html">← 返回36队</a><span>2026—27 · 欧冠联赛阶段</span></header>
 <main id="main"><section class="club-hero"><div class="club-index">{idx + 1:02d}</div><p>{esc(team['official_name'])}</p>
