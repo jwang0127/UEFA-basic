@@ -142,7 +142,7 @@ def report_cell(report: dict, side: str, kind: str) -> str:
     if kind == "cards":
         return f"黄牌 {stat(report, side, 'yellow_cards', '0')} · 红牌 {stat(report, side, 'red_cards', '0')}"
     lineup = (report.get("lineups") or {}).get(side) or {}
-    coach = "、".join(lineup.get("coaches") or []) or "官方阵容资料未列教练"
+    coach = "、".join(str(name) for name in (lineup.get("coaches") or []) if name) or "官方阵容资料未列教练"
     return f"首发名单 {lineup.get('starting_count', '—')} 人 · 场边教练：{coach}"
 
 
