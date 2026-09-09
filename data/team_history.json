@@ -1,0 +1,1908 @@
+{
+  "meta": {
+    "history_source": "欧冠36强_2025-26完整战绩_分主客场.html",
+    "recent_source": "ESPN team results pages"
+  },
+  "ucl_2025_26": {
+    "Paris": [
+      {
+        "date": "09-17",
+        "venue": "主场",
+        "opponent_zh": "亚特兰大",
+        "score": "4-0",
+        "result": "W"
+      },
+      {
+        "date": "10-01",
+        "venue": "客场",
+        "opponent_zh": "巴萨",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "10-21",
+        "venue": "客场",
+        "opponent_zh": "勒沃库森",
+        "score": "7-2",
+        "result": "W"
+      },
+      {
+        "date": "11-04",
+        "venue": "主场",
+        "opponent_zh": "拜仁",
+        "score": "1-2",
+        "result": "L"
+      },
+      {
+        "date": "11-26",
+        "venue": "主场",
+        "opponent_zh": "热刺",
+        "score": "3-5",
+        "result": "L"
+      },
+      {
+        "date": "12-10",
+        "venue": "客场",
+        "opponent_zh": "毕尔巴鄂",
+        "score": "0-0",
+        "result": "D"
+      },
+      {
+        "date": "01-20",
+        "venue": "客场",
+        "opponent_zh": "葡萄牙体育",
+        "score": "1-2",
+        "result": "L"
+      },
+      {
+        "date": "01-28",
+        "venue": "主场",
+        "opponent_zh": "纽卡",
+        "score": "1-1",
+        "result": "D"
+      }
+    ],
+    "Bayern München": [
+      {
+        "date": "09-17",
+        "venue": "主场",
+        "opponent_zh": "切尔西",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "09-30",
+        "venue": "客场",
+        "opponent_zh": "帕福斯",
+        "score": "5-1",
+        "result": "W"
+      },
+      {
+        "date": "10-22",
+        "venue": "主场",
+        "opponent_zh": "布鲁日",
+        "score": "0-4",
+        "result": "L"
+      },
+      {
+        "date": "11-04",
+        "venue": "客场",
+        "opponent_zh": "巴黎圣日耳曼",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "11-26",
+        "venue": "客场",
+        "opponent_zh": "阿森纳",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "12-09",
+        "venue": "主场",
+        "opponent_zh": "葡萄牙体育",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "01-21",
+        "venue": "主场",
+        "opponent_zh": "圣吉罗斯",
+        "score": "0-2",
+        "result": "L"
+      },
+      {
+        "date": "01-28",
+        "venue": "客场",
+        "opponent_zh": "埃因霍温",
+        "score": "2-1",
+        "result": "W"
+      }
+    ],
+    "Real Madrid": [
+      {
+        "date": "09-16",
+        "venue": "主场",
+        "opponent_zh": "马赛",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "09-30",
+        "venue": "客场",
+        "opponent_zh": "凯拉特",
+        "score": "5-0",
+        "result": "W"
+      },
+      {
+        "date": "10-22",
+        "venue": "主场",
+        "opponent_zh": "尤文",
+        "score": "1-0",
+        "result": "W"
+      },
+      {
+        "date": "11-04",
+        "venue": "客场",
+        "opponent_zh": "利物浦",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "11-26",
+        "venue": "客场",
+        "opponent_zh": "奥林匹亚科斯",
+        "score": "4-3",
+        "result": "W"
+      },
+      {
+        "date": "12-10",
+        "venue": "主场",
+        "opponent_zh": "曼城",
+        "score": "1-2",
+        "result": "L"
+      },
+      {
+        "date": "01-20",
+        "venue": "主场",
+        "opponent_zh": "摩纳哥",
+        "score": "6-1",
+        "result": "W"
+      },
+      {
+        "date": "01-28",
+        "venue": "客场",
+        "opponent_zh": "本菲卡",
+        "score": "2-4",
+        "result": "L"
+      }
+    ],
+    "Liverpool": [
+      {
+        "date": "09-17",
+        "venue": "主场",
+        "opponent_zh": "马竞",
+        "score": "2-3",
+        "result": "L"
+      },
+      {
+        "date": "09-30",
+        "venue": "客场",
+        "opponent_zh": "加拉塔萨雷",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "10-22",
+        "venue": "客场",
+        "opponent_zh": "法兰克福",
+        "score": "1-5",
+        "result": "L"
+      },
+      {
+        "date": "11-04",
+        "venue": "主场",
+        "opponent_zh": "皇马",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "11-26",
+        "venue": "客场",
+        "opponent_zh": "埃因霍温",
+        "score": "4-1",
+        "result": "W"
+      },
+      {
+        "date": "12-09",
+        "venue": "客场",
+        "opponent_zh": "国米",
+        "score": "1-0",
+        "result": "W"
+      },
+      {
+        "date": "01-21",
+        "venue": "客场",
+        "opponent_zh": "马赛",
+        "score": "3-0",
+        "result": "W"
+      },
+      {
+        "date": "01-28",
+        "venue": "主场",
+        "opponent_zh": "卡拉巴赫",
+        "score": "0-6",
+        "result": "L"
+      }
+    ],
+    "Inter": [
+      {
+        "date": "09-17",
+        "venue": "客场",
+        "opponent_zh": "阿贾克斯",
+        "score": "2-0",
+        "result": "W"
+      },
+      {
+        "date": "09-30",
+        "venue": "主场",
+        "opponent_zh": "布拉格斯拉维亚",
+        "score": "3-0",
+        "result": "W"
+      },
+      {
+        "date": "10-21",
+        "venue": "主场",
+        "opponent_zh": "圣吉罗斯",
+        "score": "4-0",
+        "result": "W"
+      },
+      {
+        "date": "11-05",
+        "venue": "主场",
+        "opponent_zh": "凯拉特",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "11-26",
+        "venue": "客场",
+        "opponent_zh": "马竞",
+        "score": "1-2",
+        "result": "L"
+      },
+      {
+        "date": "12-09",
+        "venue": "主场",
+        "opponent_zh": "利物浦",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "01-20",
+        "venue": "客场",
+        "opponent_zh": "阿森纳",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "01-28",
+        "venue": "客场",
+        "opponent_zh": "多特蒙德",
+        "score": "0-2",
+        "result": "L"
+      }
+    ],
+    "Man City": [
+      {
+        "date": "09-18",
+        "venue": "主场",
+        "opponent_zh": "那不勒斯",
+        "score": "2-0",
+        "result": "W"
+      },
+      {
+        "date": "10-01",
+        "venue": "客场",
+        "opponent_zh": "摩纳哥",
+        "score": "2-2",
+        "result": "D"
+      },
+      {
+        "date": "10-21",
+        "venue": "客场",
+        "opponent_zh": "比利亚雷亚尔",
+        "score": "2-0",
+        "result": "W"
+      },
+      {
+        "date": "11-05",
+        "venue": "主场",
+        "opponent_zh": "多特蒙德",
+        "score": "1-4",
+        "result": "L"
+      },
+      {
+        "date": "11-25",
+        "venue": "客场",
+        "opponent_zh": "勒沃库森",
+        "score": "0-2",
+        "result": "L"
+      },
+      {
+        "date": "12-10",
+        "venue": "客场",
+        "opponent_zh": "皇马",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "01-20",
+        "venue": "客场",
+        "opponent_zh": "博德闪耀",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "01-28",
+        "venue": "主场",
+        "opponent_zh": "加拉塔萨雷",
+        "score": "0-2",
+        "result": "L"
+      }
+    ],
+    "Arsenal": [
+      {
+        "date": "09-16",
+        "venue": "客场",
+        "opponent_zh": "毕尔巴鄂",
+        "score": "2-0",
+        "result": "W"
+      },
+      {
+        "date": "10-01",
+        "venue": "主场",
+        "opponent_zh": "奥林匹亚科斯",
+        "score": "2-0",
+        "result": "W"
+      },
+      {
+        "date": "10-21",
+        "venue": "主场",
+        "opponent_zh": "马竞",
+        "score": "4-0",
+        "result": "W"
+      },
+      {
+        "date": "11-04",
+        "venue": "客场",
+        "opponent_zh": "布拉格斯拉维亚",
+        "score": "3-0",
+        "result": "W"
+      },
+      {
+        "date": "11-26",
+        "venue": "主场",
+        "opponent_zh": "拜仁",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "12-10",
+        "venue": "客场",
+        "opponent_zh": "布鲁日",
+        "score": "3-0",
+        "result": "W"
+      },
+      {
+        "date": "01-20",
+        "venue": "客场",
+        "opponent_zh": "国米",
+        "score": "3-1",
+        "result": "W"
+      },
+      {
+        "date": "01-28",
+        "venue": "主场",
+        "opponent_zh": "凯拉特",
+        "score": "2-3",
+        "result": "L"
+      }
+    ],
+    "Barcelona": [
+      {
+        "date": "09-18",
+        "venue": "客场",
+        "opponent_zh": "纽卡",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "10-01",
+        "venue": "主场",
+        "opponent_zh": "巴黎圣日耳曼",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "10-21",
+        "venue": "主场",
+        "opponent_zh": "奥林匹亚科斯",
+        "score": "1-6",
+        "result": "L"
+      },
+      {
+        "date": "11-05",
+        "venue": "客场",
+        "opponent_zh": "布鲁日",
+        "score": "3-3",
+        "result": "D"
+      },
+      {
+        "date": "11-25",
+        "venue": "客场",
+        "opponent_zh": "切尔西",
+        "score": "0-3",
+        "result": "L"
+      },
+      {
+        "date": "12-09",
+        "venue": "主场",
+        "opponent_zh": "法兰克福",
+        "score": "1-2",
+        "result": "L"
+      },
+      {
+        "date": "01-21",
+        "venue": "客场",
+        "opponent_zh": "布拉格斯拉维亚",
+        "score": "4-2",
+        "result": "W"
+      },
+      {
+        "date": "01-28",
+        "venue": "主场",
+        "opponent_zh": "哥本哈根",
+        "score": "1-4",
+        "result": "L"
+      }
+    ],
+    "Atleti": [
+      {
+        "date": "09-17",
+        "venue": "客场",
+        "opponent_zh": "利物浦",
+        "score": "2-3",
+        "result": "L"
+      },
+      {
+        "date": "09-30",
+        "venue": "主场",
+        "opponent_zh": "法兰克福",
+        "score": "5-1",
+        "result": "W"
+      },
+      {
+        "date": "10-21",
+        "venue": "客场",
+        "opponent_zh": "阿森纳",
+        "score": "0-4",
+        "result": "L"
+      },
+      {
+        "date": "11-04",
+        "venue": "主场",
+        "opponent_zh": "圣吉罗斯",
+        "score": "3-1",
+        "result": "W"
+      },
+      {
+        "date": "11-26",
+        "venue": "主场",
+        "opponent_zh": "国米",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "12-09",
+        "venue": "客场",
+        "opponent_zh": "埃因霍温",
+        "score": "3-2",
+        "result": "W"
+      },
+      {
+        "date": "01-21",
+        "venue": "主场",
+        "opponent_zh": "加拉塔萨雷",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "01-28",
+        "venue": "客场",
+        "opponent_zh": "博德闪耀",
+        "score": "1-2",
+        "result": "L"
+      }
+    ],
+    "Borussia Dortmund": [
+      {
+        "date": "09-16",
+        "venue": "客场",
+        "opponent_zh": "尤文",
+        "score": "4-4",
+        "result": "D"
+      },
+      {
+        "date": "10-01",
+        "venue": "主场",
+        "opponent_zh": "毕尔巴鄂",
+        "score": "1-4",
+        "result": "L"
+      },
+      {
+        "date": "10-21",
+        "venue": "主场",
+        "opponent_zh": "哥本哈根",
+        "score": "4-2",
+        "result": "W"
+      },
+      {
+        "date": "11-05",
+        "venue": "客场",
+        "opponent_zh": "曼城",
+        "score": "1-4",
+        "result": "L"
+      },
+      {
+        "date": "11-25",
+        "venue": "主场",
+        "opponent_zh": "比利亚雷亚尔",
+        "score": "0-4",
+        "result": "L"
+      },
+      {
+        "date": "12-10",
+        "venue": "主场",
+        "opponent_zh": "博德闪耀",
+        "score": "2-2",
+        "result": "D"
+      },
+      {
+        "date": "01-20",
+        "venue": "客场",
+        "opponent_zh": "热刺",
+        "score": "0-2",
+        "result": "L"
+      },
+      {
+        "date": "01-28",
+        "venue": "主场",
+        "opponent_zh": "国米",
+        "score": "0-2",
+        "result": "L"
+      }
+    ],
+    "Sporting CP": [
+      {
+        "date": "09-18",
+        "venue": "主场",
+        "opponent_zh": "凯拉特",
+        "score": "4-1",
+        "result": "W"
+      },
+      {
+        "date": "10-01",
+        "venue": "客场",
+        "opponent_zh": "那不勒斯",
+        "score": "1-2",
+        "result": "L"
+      },
+      {
+        "date": "10-22",
+        "venue": "主场",
+        "opponent_zh": "马赛",
+        "score": "1-2",
+        "result": "L"
+      },
+      {
+        "date": "11-04",
+        "venue": "客场",
+        "opponent_zh": "尤文",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "11-26",
+        "venue": "主场",
+        "opponent_zh": "布鲁日",
+        "score": "3-0",
+        "result": "W"
+      },
+      {
+        "date": "12-09",
+        "venue": "客场",
+        "opponent_zh": "拜仁",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "01-20",
+        "venue": "主场",
+        "opponent_zh": "巴黎圣日耳曼",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "01-28",
+        "venue": "客场",
+        "opponent_zh": "毕尔巴鄂",
+        "score": "2-3",
+        "result": "L"
+      }
+    ],
+    "Club Brugge": [
+      {
+        "date": "09-18",
+        "venue": "主场",
+        "opponent_zh": "摩纳哥",
+        "score": "1-4",
+        "result": "L"
+      },
+      {
+        "date": "09-30",
+        "venue": "客场",
+        "opponent_zh": "亚特兰大",
+        "score": "1-2",
+        "result": "L"
+      },
+      {
+        "date": "10-22",
+        "venue": "客场",
+        "opponent_zh": "拜仁",
+        "score": "0-4",
+        "result": "L"
+      },
+      {
+        "date": "11-05",
+        "venue": "主场",
+        "opponent_zh": "巴萨",
+        "score": "3-3",
+        "result": "D"
+      },
+      {
+        "date": "11-26",
+        "venue": "客场",
+        "opponent_zh": "葡萄牙体育",
+        "score": "0-3",
+        "result": "L"
+      },
+      {
+        "date": "12-10",
+        "venue": "主场",
+        "opponent_zh": "阿森纳",
+        "score": "0-3",
+        "result": "L"
+      },
+      {
+        "date": "01-20",
+        "venue": "客场",
+        "opponent_zh": "凯拉特",
+        "score": "1-4",
+        "result": "L"
+      },
+      {
+        "date": "01-28",
+        "venue": "主场",
+        "opponent_zh": "马赛",
+        "score": "0-3",
+        "result": "L"
+      }
+    ],
+    "PSV": [
+      {
+        "date": "09-16",
+        "venue": "主场",
+        "opponent_zh": "圣吉罗斯",
+        "score": "3-1",
+        "result": "W"
+      },
+      {
+        "date": "10-01",
+        "venue": "客场",
+        "opponent_zh": "勒沃库森",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "10-21",
+        "venue": "主场",
+        "opponent_zh": "那不勒斯",
+        "score": "6-2",
+        "result": "W"
+      },
+      {
+        "date": "11-04",
+        "venue": "客场",
+        "opponent_zh": "奥林匹亚科斯",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "11-26",
+        "venue": "主场",
+        "opponent_zh": "利物浦",
+        "score": "4-1",
+        "result": "W"
+      },
+      {
+        "date": "12-09",
+        "venue": "客场",
+        "opponent_zh": "马竞",
+        "score": "3-2",
+        "result": "W"
+      },
+      {
+        "date": "01-21",
+        "venue": "客场",
+        "opponent_zh": "纽卡",
+        "score": "0-3",
+        "result": "L"
+      },
+      {
+        "date": "01-28",
+        "venue": "主场",
+        "opponent_zh": "拜仁",
+        "score": "1-2",
+        "result": "L"
+      }
+    ],
+    "Bodø/Glimt": [
+      {
+        "date": "09-17",
+        "venue": "客场",
+        "opponent_zh": "布拉格斯拉维亚",
+        "score": "2-2",
+        "result": "D"
+      },
+      {
+        "date": "09-30",
+        "venue": "主场",
+        "opponent_zh": "热刺",
+        "score": "2-2",
+        "result": "D"
+      },
+      {
+        "date": "10-22",
+        "venue": "客场",
+        "opponent_zh": "加拉塔萨雷",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "11-04",
+        "venue": "主场",
+        "opponent_zh": "摩纳哥",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "11-25",
+        "venue": "主场",
+        "opponent_zh": "尤文",
+        "score": "3-2",
+        "result": "W"
+      },
+      {
+        "date": "12-10",
+        "venue": "客场",
+        "opponent_zh": "多特蒙德",
+        "score": "2-2",
+        "result": "D"
+      },
+      {
+        "date": "01-20",
+        "venue": "主场",
+        "opponent_zh": "曼城",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "01-28",
+        "venue": "客场",
+        "opponent_zh": "马竞",
+        "score": "2-1",
+        "result": "W"
+      }
+    ],
+    "Napoli": [
+      {
+        "date": "09-18",
+        "venue": "客场",
+        "opponent_zh": "曼城",
+        "score": "0-2",
+        "result": "L"
+      },
+      {
+        "date": "10-01",
+        "venue": "主场",
+        "opponent_zh": "葡萄牙体育",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "10-21",
+        "venue": "客场",
+        "opponent_zh": "埃因霍温",
+        "score": "2-6",
+        "result": "L"
+      },
+      {
+        "date": "11-04",
+        "venue": "主场",
+        "opponent_zh": "法兰克福",
+        "score": "0-0",
+        "result": "D"
+      },
+      {
+        "date": "11-25",
+        "venue": "主场",
+        "opponent_zh": "卡拉巴赫",
+        "score": "0-2",
+        "result": "L"
+      },
+      {
+        "date": "12-10",
+        "venue": "客场",
+        "opponent_zh": "本菲卡",
+        "score": "0-2",
+        "result": "L"
+      },
+      {
+        "date": "01-20",
+        "venue": "客场",
+        "opponent_zh": "哥本哈根",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "01-28",
+        "venue": "主场",
+        "opponent_zh": "切尔西",
+        "score": "2-3",
+        "result": "L"
+      }
+    ],
+    "Villarreal": [
+      {
+        "date": "09-16",
+        "venue": "客场",
+        "opponent_zh": "热刺",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "10-01",
+        "venue": "主场",
+        "opponent_zh": "尤文",
+        "score": "2-2",
+        "result": "D"
+      },
+      {
+        "date": "10-21",
+        "venue": "主场",
+        "opponent_zh": "曼城",
+        "score": "0-2",
+        "result": "L"
+      },
+      {
+        "date": "11-05",
+        "venue": "客场",
+        "opponent_zh": "帕福斯",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "11-25",
+        "venue": "客场",
+        "opponent_zh": "多特蒙德",
+        "score": "0-4",
+        "result": "L"
+      },
+      {
+        "date": "12-10",
+        "venue": "主场",
+        "opponent_zh": "哥本哈根",
+        "score": "3-2",
+        "result": "W"
+      },
+      {
+        "date": "01-20",
+        "venue": "主场",
+        "opponent_zh": "阿贾克斯",
+        "score": "2-1",
+        "result": "W"
+      },
+      {
+        "date": "01-28",
+        "venue": "客场",
+        "opponent_zh": "勒沃库森",
+        "score": "0-3",
+        "result": "L"
+      }
+    ],
+    "Galatasaray": [
+      {
+        "date": "09-18",
+        "venue": "客场",
+        "opponent_zh": "法兰克福",
+        "score": "1-5",
+        "result": "L"
+      },
+      {
+        "date": "09-30",
+        "venue": "主场",
+        "opponent_zh": "利物浦",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "10-22",
+        "venue": "主场",
+        "opponent_zh": "博德闪耀",
+        "score": "1-3",
+        "result": "L"
+      },
+      {
+        "date": "11-05",
+        "venue": "客场",
+        "opponent_zh": "阿贾克斯",
+        "score": "3-0",
+        "result": "W"
+      },
+      {
+        "date": "11-25",
+        "venue": "主场",
+        "opponent_zh": "圣吉罗斯",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "12-09",
+        "venue": "客场",
+        "opponent_zh": "摩纳哥",
+        "score": "0-1",
+        "result": "L"
+      },
+      {
+        "date": "01-21",
+        "venue": "客场",
+        "opponent_zh": "马竞",
+        "score": "1-1",
+        "result": "D"
+      },
+      {
+        "date": "01-28",
+        "venue": "客场",
+        "opponent_zh": "曼城",
+        "score": "0-2",
+        "result": "L"
+      }
+    ],
+    "Slavia Praha": [
+      {
+        "date": "09-17",
+        "venue": "主场",
+        "opponent_zh": "博德闪耀",
+        "score": "2-2",
+        "result": "D"
+      },
+      {
+        "date": "09-30",
+        "venue": "客场",
+        "opponent_zh": "国米",
+        "score": "0-3",
+        "result": "L"
+      },
+      {
+        "date": "10-22",
+        "venue": "客场",
+        "opponent_zh": "亚特兰大",
+        "score": "0-0",
+        "result": "D"
+      },
+      {
+        "date": "11-04",
+        "venue": "主场",
+        "opponent_zh": "阿森纳",
+        "score": "0-3",
+        "result": "L"
+      },
+      {
+        "date": "11-25",
+        "venue": "主场",
+        "opponent_zh": "毕尔巴鄂",
+        "score": "0-0",
+        "result": "D"
+      },
+      {
+        "date": "12-09",
+        "venue": "客场",
+        "opponent_zh": "热刺",
+        "score": "0-3",
+        "result": "L"
+      },
+      {
+        "date": "01-21",
+        "venue": "主场",
+        "opponent_zh": "巴萨",
+        "score": "2-4",
+        "result": "L"
+      },
+      {
+        "date": "01-28",
+        "venue": "客场",
+        "opponent_zh": "帕福斯",
+        "score": "1-4",
+        "result": "L"
+      }
+    ]
+  },
+  "recent_form": {
+    "Leipzig": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/11420",
+      "matches": [
+        {
+          "date": "2026-09-05",
+          "competition": "German Bundesliga",
+          "venue": "客场",
+          "opponent": "Werder Bremen",
+          "opponent_zh": "云达不来梅",
+          "score": "1–3",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-29",
+          "competition": "German Bundesliga",
+          "venue": "主场",
+          "opponent": "Borussia Mönchengladbach",
+          "opponent_zh": "门兴格拉德巴赫",
+          "score": "3–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-22",
+          "competition": "German Cup",
+          "venue": "客场",
+          "opponent": "Eintracht Trier",
+          "opponent_zh": "特里尔",
+          "score": "6–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-15",
+          "competition": "Club Friendly",
+          "venue": "客场",
+          "opponent": "Bayern Munich",
+          "opponent_zh": "拜仁慕尼黑",
+          "score": "1–3",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-08",
+          "competition": "Club Friendly",
+          "venue": "客场",
+          "opponent": "Leeds United",
+          "opponent_zh": "利兹联",
+          "score": "0–2",
+          "result": "负"
+        }
+      ]
+    },
+    "Aston Villa": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/362",
+      "matches": [
+        {
+          "date": "2026-09-08",
+          "competition": "UEFA Champions League",
+          "venue": "客场",
+          "opponent": "Club Brugge",
+          "opponent_zh": "布鲁日",
+          "score": "3–2",
+          "result": "胜"
+        },
+        {
+          "date": "2026-09-05",
+          "competition": "English Premier League",
+          "venue": "客场",
+          "opponent": "Hull City",
+          "opponent_zh": "赫尔城",
+          "score": "0–0",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-31",
+          "competition": "English Premier League",
+          "venue": "主场",
+          "opponent": "Arsenal",
+          "opponent_zh": "阿森纳",
+          "score": "0–1",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-23",
+          "competition": "English Premier League",
+          "venue": "客场",
+          "opponent": "Brighton & Hove Albion",
+          "opponent_zh": "布莱顿",
+          "score": "0–4",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-15",
+          "competition": "Club Friendly",
+          "venue": "客场",
+          "opponent": "Borussia Mönchengladbach",
+          "opponent_zh": "门兴格拉德巴赫",
+          "score": "1–2",
+          "result": "负"
+        }
+      ]
+    },
+    "Como": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/2572",
+      "matches": [
+        {
+          "date": "2026-09-04",
+          "competition": "Italian Serie A",
+          "venue": "客场",
+          "opponent": "Genoa",
+          "opponent_zh": "热那亚",
+          "score": "4–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-30",
+          "competition": "Italian Serie A",
+          "venue": "客场",
+          "opponent": "Napoli",
+          "opponent_zh": "那不勒斯",
+          "score": "2–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-22",
+          "competition": "Italian Serie A",
+          "venue": "客场",
+          "opponent": "Udinese",
+          "opponent_zh": "乌迪内斯",
+          "score": "1–1",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-16",
+          "competition": "Club Friendly",
+          "venue": "客场",
+          "opponent": "Liverpool",
+          "opponent_zh": "利物浦",
+          "score": "0–2",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-16",
+          "competition": "Club Friendly",
+          "venue": "客场",
+          "opponent": "Liverpool",
+          "opponent_zh": "利物浦",
+          "score": "0–0",
+          "result": "平"
+        }
+      ]
+    },
+    "LASK": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/4411",
+      "matches": [
+        {
+          "date": "2026-09-08",
+          "competition": "UEFA Champions League",
+          "venue": "客场",
+          "opponent": "AEK Athens",
+          "opponent_zh": "AEK雅典",
+          "score": "0–1",
+          "result": "负"
+        },
+        {
+          "date": "2026-09-01",
+          "competition": "Austrian Bundesliga",
+          "venue": "客场",
+          "opponent": "Wolfsberger",
+          "opponent_zh": "沃尔夫斯贝格",
+          "score": "3–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-29",
+          "competition": "Austrian Bundesliga",
+          "venue": "主场",
+          "opponent": "SC Rheindorf Altach",
+          "opponent_zh": "阿尔特阿赫",
+          "score": "3–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-25",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "主场",
+          "opponent": "Celtic",
+          "opponent_zh": "凯尔特人",
+          "score": "5–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-19",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "客场",
+          "opponent": "Celtic",
+          "opponent_zh": "凯尔特人",
+          "score": "0–3",
+          "result": "负"
+        }
+      ]
+    },
+    "AEK Athens": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/887",
+      "matches": [
+        {
+          "date": "2026-09-08",
+          "competition": "UEFA Champions League",
+          "venue": "主场",
+          "opponent": "LASK Linz",
+          "opponent_zh": "LASK林茨",
+          "score": "1–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-09-05",
+          "competition": "Greek Super League",
+          "venue": "主场",
+          "opponent": "Aris",
+          "opponent_zh": "阿里斯",
+          "score": "5–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-30",
+          "competition": "Greek Super League",
+          "venue": "客场",
+          "opponent": "Kifisia",
+          "opponent_zh": "基菲夏",
+          "score": "1–1",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-26",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "主场",
+          "opponent": "Levski Sofia",
+          "opponent_zh": "索菲亚列夫斯基",
+          "score": "4–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-22",
+          "competition": "Greek Super League",
+          "venue": "主场",
+          "opponent": "Iraklis",
+          "opponent_zh": "伊拉克利斯",
+          "score": "4–0",
+          "result": "胜"
+        }
+      ]
+    },
+    "Fenerbahçe": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/436",
+      "matches": [
+        {
+          "date": "2026-09-05",
+          "competition": "Turkish Super Lig",
+          "venue": "主场",
+          "opponent": "Besiktas",
+          "opponent_zh": "贝西克塔斯",
+          "score": "1–2",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-30",
+          "competition": "Turkish Super Lig",
+          "venue": "客场",
+          "opponent": "Samsunspor",
+          "opponent_zh": "萨姆松体育",
+          "score": "2–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-26",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "客场",
+          "opponent": "Lyon",
+          "opponent_zh": "里昂",
+          "score": "2–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-22",
+          "competition": "Turkish Super Lig",
+          "venue": "主场",
+          "opponent": "Konyaspor",
+          "opponent_zh": "科尼亚体育",
+          "score": "4–2",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-18",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "主场",
+          "opponent": "Lyon",
+          "opponent_zh": "里昂",
+          "score": "1–1",
+          "result": "平"
+        }
+      ]
+    },
+    "Feyenoord": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/142",
+      "matches": [
+        {
+          "date": "2026-09-05",
+          "competition": "Dutch Eredivisie",
+          "venue": "客场",
+          "opponent": "NEC Nijmegen",
+          "opponent_zh": "奈梅亨",
+          "score": "3–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-30",
+          "competition": "Dutch Eredivisie",
+          "venue": "主场",
+          "opponent": "ADO Den Haag",
+          "opponent_zh": "海牙",
+          "score": "2–2",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-23",
+          "competition": "Dutch Eredivisie",
+          "venue": "客场",
+          "opponent": "SC Cambuur",
+          "opponent_zh": "坎布尔",
+          "score": "5–2",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-16",
+          "competition": "Dutch Eredivisie",
+          "venue": "主场",
+          "opponent": "Go Ahead Eagles",
+          "opponent_zh": "前进之鹰",
+          "score": "2–2",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-09",
+          "competition": "Dutch Eredivisie",
+          "venue": "客场",
+          "opponent": "Sparta Rotterdam",
+          "opponent_zh": "鹿特丹斯巴达",
+          "score": "1–0",
+          "result": "胜"
+        }
+      ]
+    },
+    "Lille": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/166",
+      "matches": [
+        {
+          "date": "2026-09-08",
+          "competition": "UEFA Champions League",
+          "venue": "主场",
+          "opponent": "Real Betis",
+          "opponent_zh": "皇家贝蒂斯",
+          "score": "2–3",
+          "result": "负"
+        },
+        {
+          "date": "2026-09-03",
+          "competition": "French Ligue 1",
+          "venue": "客场",
+          "opponent": "Toulouse",
+          "opponent_zh": "图卢兹",
+          "score": "1–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-28",
+          "competition": "French Ligue 1",
+          "venue": "主场",
+          "opponent": "Paris Saint-Germain",
+          "opponent_zh": "巴黎圣日耳曼",
+          "score": "2–2",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-23",
+          "competition": "French Ligue 1",
+          "venue": "客场",
+          "opponent": "Angers",
+          "opponent_zh": "昂热",
+          "score": "2–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-15",
+          "competition": "Club Friendly",
+          "venue": "客场",
+          "opponent": "Everton",
+          "opponent_zh": "埃弗顿",
+          "score": "1–1",
+          "result": "平"
+        }
+      ]
+    },
+    "Porto": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/437",
+      "matches": [
+        {
+          "date": "2026-09-08",
+          "competition": "UEFA Champions League",
+          "venue": "主场",
+          "opponent": "Manchester City",
+          "opponent_zh": "曼彻斯特城",
+          "score": "0–2",
+          "result": "负"
+        },
+        {
+          "date": "2026-09-04",
+          "competition": "Portuguese Primeira Liga",
+          "venue": "主场",
+          "opponent": "Moreirense",
+          "opponent_zh": "莫雷伦斯",
+          "score": "2–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-29",
+          "competition": "Portuguese Primeira Liga",
+          "venue": "客场",
+          "opponent": "Académico de Viseu",
+          "opponent_zh": "维塞乌学院",
+          "score": "3–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-23",
+          "competition": "Portuguese Primeira Liga",
+          "venue": "主场",
+          "opponent": "Arouca",
+          "opponent_zh": "阿罗卡",
+          "score": "2–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-15",
+          "competition": "Portuguese Primeira Liga",
+          "venue": "客场",
+          "opponent": "Rio Ave",
+          "opponent_zh": "里奥阿维",
+          "score": "2–0",
+          "result": "胜"
+        }
+      ]
+    },
+    "Sabah": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/20298",
+      "matches": [
+        {
+          "date": "2026-05-15",
+          "competition": "Malaysian Super League",
+          "venue": "主场",
+          "opponent": "Terengganu FC",
+          "opponent_zh": "登嘉楼",
+          "score": "0–1",
+          "result": "负"
+        },
+        {
+          "date": "2026-05-09",
+          "competition": "Malaysian Super League",
+          "venue": "客场",
+          "opponent": "Brunei DPMM FC",
+          "opponent_zh": "文莱DPMM",
+          "score": "1–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-05-02",
+          "competition": "Malaysian Super League",
+          "venue": "主场",
+          "opponent": "PDRM FC",
+          "opponent_zh": "皇家警察",
+          "score": "5–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-04-26",
+          "competition": "Malaysian Super League",
+          "venue": "客场",
+          "opponent": "Penang FC",
+          "opponent_zh": "槟城",
+          "score": "0–0",
+          "result": "平"
+        },
+        {
+          "date": "2026-04-23",
+          "competition": "Malaysian Super League",
+          "venue": "客场",
+          "opponent": "Melaka FC",
+          "opponent_zh": "马六甲",
+          "score": "0–1",
+          "result": "负"
+        }
+      ]
+    },
+    "Man United": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/360",
+      "matches": [
+        {
+          "date": "2026-09-06",
+          "competition": "English Premier League",
+          "venue": "客场",
+          "opponent": "Everton",
+          "opponent_zh": "埃弗顿",
+          "score": "2–2",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-30",
+          "competition": "English Premier League",
+          "venue": "主场",
+          "opponent": "Ipswich Town",
+          "opponent_zh": "伊普斯维奇",
+          "score": "5–2",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-22",
+          "competition": "English Premier League",
+          "venue": "客场",
+          "opponent": "Hull City",
+          "opponent_zh": "赫尔城",
+          "score": "0–2",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-15",
+          "competition": "Club Friendly",
+          "venue": "主场",
+          "opponent": "AC Milan",
+          "opponent_zh": "AC米兰",
+          "score": "2–4",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-12",
+          "competition": "Club Friendly",
+          "venue": "主场",
+          "opponent": "Leeds United",
+          "opponent_zh": "利兹联",
+          "score": "1–1",
+          "result": "平"
+        }
+      ]
+    },
+    "Real Betis": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/244",
+      "matches": [
+        {
+          "date": "2026-09-08",
+          "competition": "UEFA Champions League",
+          "venue": "客场",
+          "opponent": "Lille",
+          "opponent_zh": "里尔",
+          "score": "3–2",
+          "result": "胜"
+        },
+        {
+          "date": "2026-09-04",
+          "competition": "Spanish LALIGA",
+          "venue": "主场",
+          "opponent": "Real Madrid",
+          "opponent_zh": "皇家马德里",
+          "score": "1–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-29",
+          "competition": "Spanish LALIGA",
+          "venue": "客场",
+          "opponent": "Levante",
+          "opponent_zh": "莱万特",
+          "score": "2–5",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-25",
+          "competition": "Spanish LALIGA",
+          "venue": "客场",
+          "opponent": "Valencia",
+          "opponent_zh": "瓦伦西亚",
+          "score": "1–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-21",
+          "competition": "Spanish LALIGA",
+          "venue": "主场",
+          "opponent": "Real Sociedad",
+          "opponent_zh": "皇家社会",
+          "score": "1–0",
+          "result": "胜"
+        }
+      ]
+    },
+    "Roma": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/104",
+      "matches": [
+        {
+          "date": "2026-09-05",
+          "competition": "Italian Serie A",
+          "venue": "主场",
+          "opponent": "Atalanta",
+          "opponent_zh": "亚特兰大",
+          "score": "2–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-31",
+          "competition": "Italian Serie A",
+          "venue": "客场",
+          "opponent": "Lecce",
+          "opponent_zh": "莱切",
+          "score": "4–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-24",
+          "competition": "Italian Serie A",
+          "venue": "主场",
+          "opponent": "Fiorentina",
+          "opponent_zh": "佛罗伦萨",
+          "score": "4–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-15",
+          "competition": "Club Friendly",
+          "venue": "客场",
+          "opponent": "Borussia Dortmund",
+          "opponent_zh": "多特蒙德",
+          "score": "2–2",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-08",
+          "competition": "Club Friendly",
+          "venue": "客场",
+          "opponent": "Brighton & Hove Albion",
+          "opponent_zh": "布莱顿",
+          "score": "0–3",
+          "result": "负"
+        }
+      ]
+    },
+    "Shakhtar": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/493",
+      "matches": []
+    },
+    "Slovan Bratislava": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/521",
+      "matches": [
+        {
+          "date": "2026-08-26",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "客场",
+          "opponent": "NK Celje",
+          "opponent_zh": "采列",
+          "score": "2–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-19",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "主场",
+          "opponent": "NK Celje",
+          "opponent_zh": "采列",
+          "score": "1–1",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-11",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "主场",
+          "opponent": "Mjällby AIF",
+          "opponent_zh": "米亚尔比",
+          "score": "2–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-04",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "客场",
+          "opponent": "Mjällby AIF",
+          "opponent_zh": "米亚尔比",
+          "score": "2–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-07-29",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "主场",
+          "opponent": "Iberia 1999",
+          "opponent_zh": "伊比利亚1999",
+          "score": "1–1",
+          "result": "平"
+        }
+      ]
+    },
+    "Stuttgart": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/134",
+      "matches": [
+        {
+          "date": "2026-09-04",
+          "competition": "German Bundesliga",
+          "venue": "主场",
+          "opponent": "FC Cologne",
+          "opponent_zh": "科隆",
+          "score": "4–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-28",
+          "competition": "German Bundesliga",
+          "venue": "客场",
+          "opponent": "Bayern Munich",
+          "opponent_zh": "拜仁慕尼黑",
+          "score": "1–5",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-21",
+          "competition": "German Cup",
+          "venue": "客场",
+          "opponent": "Hansa Rostock",
+          "opponent_zh": "罗斯托克",
+          "score": "4–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-15",
+          "competition": "Club Friendly",
+          "venue": "客场",
+          "opponent": "Fulham",
+          "opponent_zh": "富勒姆",
+          "score": "0–1",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-08",
+          "competition": "Club Friendly",
+          "venue": "主场",
+          "opponent": "Everton",
+          "opponent_zh": "埃弗顿",
+          "score": "3–1",
+          "result": "胜"
+        }
+      ]
+    },
+    "Viking": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/510",
+      "matches": [
+        {
+          "date": "2026-09-04",
+          "competition": "Norwegian Eliteserien",
+          "venue": "客场",
+          "opponent": "Sandefjord",
+          "opponent_zh": "桑讷菲尤尔",
+          "score": "1–1",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-30",
+          "competition": "Norwegian Eliteserien",
+          "venue": "主场",
+          "opponent": "Aalesund",
+          "opponent_zh": "奥勒松",
+          "score": "2–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-26",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "主场",
+          "opponent": "Dinamo Zagreb",
+          "opponent_zh": "萨格勒布迪纳摩",
+          "score": "3–1",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-18",
+          "competition": "UEFA Champions League Qualifying",
+          "venue": "客场",
+          "opponent": "Dinamo Zagreb",
+          "opponent_zh": "萨格勒布迪纳摩",
+          "score": "2–2",
+          "result": "平"
+        },
+        {
+          "date": "2026-08-14",
+          "competition": "Norwegian Eliteserien",
+          "venue": "客场",
+          "opponent": "Rosenborg",
+          "opponent_zh": "罗森博格",
+          "score": "1–2",
+          "result": "负"
+        }
+      ]
+    },
+    "Lens": {
+      "source_url": "https://www.espn.com/soccer/team/results/_/id/175",
+      "matches": [
+        {
+          "date": "2026-09-05",
+          "competition": "French Ligue 1",
+          "venue": "主场",
+          "opponent": "Lorient",
+          "opponent_zh": "洛里昂",
+          "score": "0–1",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-29",
+          "competition": "French Ligue 1",
+          "venue": "客场",
+          "opponent": "Strasbourg",
+          "opponent_zh": "斯特拉斯堡",
+          "score": "1–2",
+          "result": "负"
+        },
+        {
+          "date": "2026-08-22",
+          "competition": "French Ligue 1",
+          "venue": "主场",
+          "opponent": "AJ Auxerre",
+          "opponent_zh": "欧塞尔",
+          "score": "5–2",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-16",
+          "competition": "French Trophee des Champions",
+          "venue": "主场",
+          "opponent": "Paris Saint-Germain",
+          "opponent_zh": "巴黎圣日耳曼",
+          "score": "1–0",
+          "result": "胜"
+        },
+        {
+          "date": "2026-08-08",
+          "competition": "Club Friendly",
+          "venue": "主场",
+          "opponent": "Sunderland",
+          "opponent_zh": "桑德兰",
+          "score": "0–2",
+          "result": "负"
+        }
+      ]
+    }
+  }
+}
