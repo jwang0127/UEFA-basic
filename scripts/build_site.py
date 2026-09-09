@@ -209,9 +209,18 @@ def render_index(data: dict) -> str:
     games_by_day: dict[str, list[dict]] = defaultdict(list)
     for game in month_games:
         games_by_day[game["date"]].append(game)
+    def month_match_markup(game: dict) -> str:
+        result = result_for(game, result_data.get("results", {}))
+        if result:
+            middle = f'<b class="month-score">{result["home_score"]} — {result["away_score"]}</b>'
+            report_link = f'<a class="month-report" href="matches/{game["id"]}.html">简报 ↗</a>'
+        else:
+            middle = '<span class="month-vs">vs</span>'
+            report_link = ""
+        return f'''<li class="month-match"><time>{esc(game["time_cet"])}</time><div class="match-pair"><a href="teams/{SLUGS[game["home_en"]]}.html">{esc(game["home"])}</a>{middle}<a href="teams/{SLUGS[game["away_en"]]}.html">{esc(game["away"])}</a>{report_link}</div></li>'''
     match_days = "".join(
         f"""<section class="match-day"><div class="day-label"><time datetime="{date}"><b>{date[8:10]}</b><span>{data_date.month}月{int(date[8:10])}日</span></time><small>{len(games)}场</small></div>
-<ol class="match-list">{"".join(f'''<li class="month-match"><time>{esc(game['time_cet'])}</time><div class="match-pair"><a href="teams/{SLUGS[game['home_en']]}.html">{esc(game['home'])}</a><span>vs</span><a href="teams/{SLUGS[game['away_en']]}.html">{esc(game['away'])}</a></div></li>''' for game in sorted(games, key=lambda x: (x['time_cet'], x['id'])))}</ol></section>"""
+<ol class="match-list">{"".join(month_match_markup(game) for game in sorted(games, key=lambda x: (x['time_cet'], x['id'])))}</ol></section>"""
         for date, games in sorted(games_by_day.items())
     )
     body = f"""
