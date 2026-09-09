@@ -141,9 +141,7 @@ def report_cell(report: dict, side: str, kind: str) -> str:
         return report.get("injuries", {}).get(side, "本场未见官方伤停通报")
     if kind == "cards":
         return f"黄牌 {stat(report, side, 'yellow_cards', '0')} · 红牌 {stat(report, side, 'red_cards', '0')}"
-    lineup = (report.get("lineups") or {}).get(side) or {}
-    coach = "、".join(str(name) for name in (lineup.get("coaches") or []) if name) or "官方阵容资料未列教练"
-    return f"首发名单 {lineup.get('starting_count', '—')} 人 · 场边教练：{coach}"
+    return "官方统计尚未发布"
 
 
 def report_team_link(key: str, data: dict, depth: int = 0) -> str:
@@ -157,7 +155,7 @@ def render_report_row(game: dict, report: dict, data: dict, depth: int = 0) -> s
     detail = f'{"../" * depth}matches/{game["id"]}.html'
     duel = f'<div class="report-link"><span><a href="{detail}">{home}</a> <b>{game.get("home_score", "—")} — {game.get("away_score", "—")}</b> <a href="{detail}">{away}</a></span><small><a href="{detail}">查看单场简报 ↗</a></small></div>'
     cells = [duel]
-    for kind in ("attack", "defense", "injuries", "cards", "tactics"):
+    for kind in ("attack", "defense", "injuries", "cards"):
         cells.append(f'<div class="report-lines"><p><span>主</span>{esc(report_cell(report, "home", kind))}</p><p><span>客</span>{esc(report_cell(report, "away", kind))}</p></div>')
     return "<tr>" + "".join(f"<td>{cell}</td>" for cell in cells) + "</tr>"
 
@@ -165,19 +163,19 @@ def render_report_row(game: dict, report: dict, data: dict, depth: int = 0) -> s
 def render_matchday_page(date: str, games: list[dict], data: dict, result_data: dict) -> str:
     rows = "".join(render_report_row(g, result_data.get("reports", {}).get(str(g["id"]), {}), data, 1) for g in games)
     body = f'''<header class="team-top"><a class="back" href="../matchdays.html">← 返回比赛日追踪</a><span>官方赛果与比赛简报</span></header>
-<main id="main" class="tracking-main"><section class="tracking-hero"><p>比赛日追踪 · {esc(format_date(date))}</p><h1>{esc(format_date(date))}</h1><p>按对手汇总进攻、防守、伤停、牌面与教练战术资料。每项只展示官方比赛资料。</p></section>
-<section class="report-card"><div class="table-scroll"><table class="report-table"><thead><tr><th>比赛</th><th>进攻情况</th><th>防守情况</th><th>伤停情况</th><th>红黄牌</th><th>教练战术</th></tr></thead><tbody>{rows}</tbody></table></div><p class="data-note">统计与阵容资料来源：UEFA官方比赛接口；未发布项目按页面说明显示。</p></section></main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>'''
-    return layout(f"{format_date(date)}比赛日追踪", body, depth=1, description=f"{format_date(date)}欧冠比赛日五项比赛追踪")
+<main id="main" class="tracking-main"><section class="tracking-hero"><p>比赛日追踪 · {esc(format_date(date))}</p><h1>{esc(format_date(date))}</h1><p>按对手汇总进攻、防守、伤停与牌面资料。每项只展示官方比赛资料。</p></section>
+<section class="report-card"><div class="table-scroll"><table class="report-table"><thead><tr><th>比赛</th><th>进攻情况</th><th>防守情况</th><th>伤停情况</th><th>红黄牌</th></tr></thead><tbody>{rows}</tbody></table></div><p class="data-note">统计资料来源：UEFA官方比赛接口；未发布项目按页面说明显示。</p></section></main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>'''
+    return layout(f"{format_date(date)}比赛日追踪", body, depth=1, description=f"{format_date(date)}欧冠比赛日四项比赛追踪")
 
 
 def render_match_page(game: dict, report: dict, data: dict) -> str:
     h = data["teams"][game["home_en"]]["name_zh"]
     a = data["teams"][game["away_en"]]["name_zh"]
     sections = []
-    for title, kind in (("进攻情况", "attack"), ("防守情况", "defense"), ("伤停情况", "injuries"), ("红黄牌", "cards"), ("教练战术", "tactics")):
+    for title, kind in (("进攻情况", "attack"), ("防守情况", "defense"), ("伤停情况", "injuries"), ("红黄牌", "cards")):
         sections.append(f'<section class="match-detail-section"><h2>{title}</h2><div class="match-side"><div><h3>{esc(h)}</h3><p>{esc(report_cell(report, "home", kind))}</p></div><div><h3>{esc(a)}</h3><p>{esc(report_cell(report, "away", kind))}</p></div></div></section>')
     body = f'''<header class="team-top"><a class="back" href="../matchdays/{game["date"]}.html">← 返回比赛日</a><span>官方比赛简报</span></header><main id="main" class="tracking-main"><section class="tracking-hero match-hero"><p>{esc(format_date(game["date"]))} · {esc(game["time_cet"])} 中欧时间</p><h1>{esc(h)} <span>{game.get("home_score", "—")} — {game.get("away_score", "—")}</span> {esc(a)}</h1></section>{"".join(sections)}</main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>'''
-    return layout(f"{h} vs {a}｜比赛简报", body, depth=1, description=f"{h}对阵{a}的比赛日五项资料简报")
+    return layout(f"{h} vs {a}｜比赛简报", body, depth=1, description=f"{h}对阵{a}的比赛日四项资料简报")
 
 
 def render_matchdays_index(data: dict, result_data: dict) -> str:
@@ -187,10 +185,10 @@ def render_matchdays_index(data: dict, result_data: dict) -> str:
         game = fixture_map.get(str(match_id))
         if game:
             by_date[game["date"]].append({**game, **result})
-    cards = "".join(f'<a class="matchday-card" href="matchdays/{date}.html"><span>{esc(format_date(date))}</span><b>{len(games)}场</b><small>查看五项比赛追踪 ↗</small></a>' for date, games in sorted(by_date.items(), reverse=True))
-    empty = '<div class="tracking-empty">首场比赛结束后，这里会自动生成按比赛日整理的五项追踪表。</div>' if not cards else cards
-    body = f'''<header class="team-top"><a class="back" href="index.html">← 返回首页</a><span>2026—27 · 欧冠联赛阶段</span></header><main id="main" class="tracking-main"><section class="tracking-hero"><p>比赛日追踪 · 自动更新</p><h1>比赛日简报</h1><p>每个比赛日一张表，按对手记录进攻、防守、伤停、红黄牌与教练战术。</p></section><section class="matchday-grid">{empty}</section></main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>'''
-    return layout("2026-27赛季欧冠比赛日追踪", body, description="按比赛日和对手整理欧冠五项比赛资料")
+    cards = "".join(f'<a class="matchday-card" href="matchdays/{date}.html"><span>{esc(format_date(date))}</span><b>{len(games)}场</b><small>查看四项比赛追踪 ↗</small></a>' for date, games in sorted(by_date.items(), reverse=True))
+    empty = '<div class="tracking-empty">首场比赛结束后，这里会自动生成按比赛日整理的四项追踪表。</div>' if not cards else cards
+    body = f'''<header class="team-top"><a class="back" href="index.html">← 返回首页</a><span>2026—27 · 欧冠联赛阶段</span></header><main id="main" class="tracking-main"><section class="tracking-hero"><p>比赛日追踪 · 自动更新</p><h1>比赛日简报</h1><p>每个比赛日一张表，按对手记录进攻、防守、伤停与红黄牌。</p></section><section class="matchday-grid">{empty}</section></main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>'''
+    return layout("2026-27赛季欧冠比赛日追踪", body, description="按比赛日和对手整理欧冠四项比赛资料")
 
 
 def result_for(game: dict, results: dict) -> dict | None:

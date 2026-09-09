@@ -74,8 +74,9 @@ def main() -> None:
     assert set(result_data.get("reports", {})) <= set(result_data.get("results", {}))
     for date_page in (ROOT / "matchdays").glob("*.html"):
         text = date_page.read_text(encoding="utf-8")
-        for heading in ("进攻情况", "防守情况", "伤停情况", "红黄牌", "教练战术"):
+        for heading in ("进攻情况", "防守情况", "伤停情况", "红黄牌"):
             assert heading in text, date_page
+        assert "教练战术" not in text, date_page
     for team in teams.values():
         assert team["arrivals"] and team["departures"]
         assert team["managers"] and team["market_value_m"] and team["world_rank"]
