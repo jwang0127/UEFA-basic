@@ -101,6 +101,7 @@ def main() -> None:
         "Slavia Prague": "Slavia Praha", "Sporting CP": "Sporting CP",
         "Club Brugge": "Club Brugge", "AEK Athens": "AEK Athens",
         "B. Dortmund": "Borussia Dortmund", "Man Utd": "Man United",
+        "Paris S.": "Paris", "S. Bratislava": "Slovan Bratislava",
     }
 
     matches = fetch_json(MATCHES_API)
