@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "date": "2026-10-13",
+    "updated_at": "2026-10-13 15:30 CST",
+    "title": "10月13日欧冠赛前基本面",
+    "scope": "仅整理赛前已公开的阵容、伤停、教练、近期赛果与赛事处境，不包含胜负、比分、概率或投注建议。"
+  },
+  "matches": [
+    {
+      "id": "2049577",
+      "home": "Lens",
+      "away": "Sporting CP",
+      "venue": "博拉尔特-德勒利斯球场",
+      "teams": {
+        "Lens": {
+          "coach": "扬尼克·卡乌扎克",
+          "shape": "近期以三中卫和翼卫结构展开，卡乌扎克出席了本场官方赛前发布会。",
+          "ucl": "首轮客场3–2胜布拉格斯拉维亚，1场3分，进3球、失2球。",
+          "league": "10月9日法甲主场2–1胜里昂；近6场各项赛事2胜1平3负。",
+          "availability": ["麦克·纳沃洛茨基和阿布杜拉赫·西马确认缺阵。", "乔纳森·格拉迪特在赛前接受检查，俱乐部明确表示不会冒险使用。", "马德瑙·于多尔的国内联赛红牌停赛不适用于欧冠。"],
+          "context": "本场是联赛阶段第2场；球队首轮取3分，且刚结束10月9日的国内联赛。"
+        },
+        "Sporting CP": {
+          "coach": "鲁伊·博尔热斯",
+          "shape": "常用4-2-3-1，双后腰之上配置三名前场球员。",
+          "ucl": "首轮主场3–1胜加拉塔萨雷，1场3分，进3球、失1球。",
+          "league": "10月9日葡超客场3–1胜布拉加；近6场各项赛事4胜2平。",
+          "availability": ["努诺·桑托斯仍在膝伤恢复期。", "罗德里戈·萨拉萨尔肌肉不适，未随队出征朗斯。", "泽诺·德巴斯已结束国内赛事停赛，恢复可用。"],
+          "context": "本场是联赛阶段第2场；球队首轮取3分，客场赛前最近一场为葡超胜场。"
+        }
+      },
+      "sources": ["https://www.uefa.com/uefachampionsleague/match/2049577--lens-vs-sporting-cp/", "https://www.rclens.fr/fr/avant-rclens-sporting-conference-de-presse-20261012", "https://www.sportsmole.co.uk/football/lens/champions-league/preview/lens-vs-sporting-lisbon-prediction-team-news-lineups_606703.html"]
+    },
+    {
+      "id": "2049579",
+      "home": "Sabah",
+      "away": "Slavia Praha",
+      "venue": "巴库奥林匹克体育场",
+      "teams": {
+        "Sabah": {
+          "coach": "瓦尔达斯·丹布劳斯卡斯",
+          "shape": "常用4-2-3-1，双后腰保护中路，单前锋身后配置三名攻击球员。",
+          "ucl": "首轮客场0–4负曼彻斯特联，1场0分，进0球、失4球。",
+          "league": "近6场各项赛事取4胜1平1负；本场是俱乐部首个欧冠正赛主场。",
+          "availability": ["进攻型中场卡雅尔·阿里耶夫因腿筋伤势缺阵。", "除该长期伤号外，赛前球队新闻未列出其他确认缺阵者。"],
+          "context": "欧冠正赛第一个主场；首轮0分，本场仍为联赛阶段早期赛程。"
+        },
+        "Slavia Praha": {
+          "coach": "因德日赫·特尔皮绍夫斯基",
+          "shape": "常用3-4-3，三中卫之外由翼卫提供宽度。",
+          "ucl": "首轮主场2–3负朗斯，1场0分，进2球、失3球。",
+          "league": "赛前已在各项赛事连胜4场；近6场总计5胜1负。",
+          "availability": ["米库拉什·科内斯尼因首轮红牌停赛。", "伊戈·奥布因跟腱伤势缺阵，斯捷潘·查卢佩克因腿筋问题存疑。", "阿多尼亚·欧安达和帕维尔·卡佐尔在赛前名单中为缺阵；大卫·尤拉塞克与奥斯卡·库比亚克存疑。"],
+          "context": "首轮0分，但国内赛事阶段连胜4场；本场为联赛阶段第2场。"
+        }
+      },
+      "sources": ["https://www.uefa.com/uefachampionsleague/match/2049579--sabah-vs-slavia-praha/", "https://www.uefa.com/uefachampionsleague/match/2049579--sabah-vs-slavia-praha/lineups/", "https://www.sportsmole.co.uk/football/sabah/champions-league/preview/sabah-vs-slavia-prague-prediction-team-news-lineups_606702.html", "https://www.fotmob.com/matches/slavia-prague-vs-sabah-fk/5vjqemr9"]
+    },
+    {
+      "id": "2049571",
+      "home": "Inter",
+      "away": "Club Brugge",
+      "venue": "梅查球场",
+      "teams": {
+        "Inter": {
+          "coach": "克里斯蒂安·齐沃",
+          "shape": "常用3-5-2，三中卫打底，翼卫负责边路宽度。",
+          "ucl": "首轮客场1–2负皇家马德里，1场0分，进1球、失2球。",
+          "league": "意甲6轮后5胜1平积16分，与拉齐奥同分并位居榜首；10月10日主场3–0胜帕尔马。",
+          "availability": ["约翰·斯通斯因屈肌问题缺阵。", "柯蒂斯·琼斯右大腿受伤，报道预计缺席至11月。", "哈恰尔·恰尔汗奥卢在周六复出，杰德·斯彭斯亦已完成国米首秀。"],
+          "context": "国内联赛处于榜首同分区间，欧冠首轮0分；本场是新赛季首个欧冠主场。"
+        },
+        "Club Brugge": {
+          "coach": "伊万·莱科",
+          "shape": "常用4-2-3-1，双后腰之上配置三名攻击球员。",
+          "ucl": "首轮主场2–3负阿斯顿维拉，1场0分，进2球、失3球。",
+          "league": "近6场各项赛事4胜2负；最近一场客场4–1胜拉卢维耶尔。",
+          "availability": ["中卫乔尔·奥尔多尼兹为赛前报道中唯一明确缺阵者。", "门将扬·索默尔今夏从国际米兰加盟布鲁日，本场回到梅查球场。"],
+          "context": "首轮0分；赛前近6场取4胜，本场是两俱乐部首次正式赛交手。"
+        }
+      },
+      "sources": ["https://www.uefa.com/uefachampionsleague/match/2049571--inter-vs-club-brugge/", "https://www.inter.it/en/news/inter-vs-club-brugge-previous-meetings-and-key-facts", "https://www.inter.it/it/notizie/allenamento-inter-vigilia-club-brugge-champions-league-12-ottobre-2026", "https://www.sportsmole.co.uk/football/inter-milan/champions-league/preview/inter-milan-vs-brugge-prediction-team-news-lineups_606669.html"]
+    },
+    {
+      "id": "2049572",
+      "home": "Arsenal",
+      "away": "Lille",
+      "venue": "酋长球场",
+      "teams": {
+        "Arsenal": {
+          "coach": "米克尔·阿尔特塔",
+          "shape": "常用4-3-3，四后卫之前配置三名中场。",
+          "ucl": "首轮客场1–0胜那不勒斯，1场3分，进1球、失0球。",
+          "league": "近6场各项赛事5胜1负；10月10日主场2–1胜利兹联。",
+          "availability": ["赫里斯托斯·佐利斯因腿筋伤缺阵，威廉·萨利巴因背部问题缺阵。", "皮耶罗·因卡皮耶在周六赛后恢复训练中脚踝受伤，赛前状态存疑。", "赖斯、道曼、孔萨和哈弗茨已在上轮联赛前获准复出。"],
+          "context": "首轮3分且零封对手；本场是本赛季首个欧冠主场。"
+        },
+        "Lille": {
+          "coach": "达维德·安切洛蒂",
+          "shape": "常用4-2-3-1，双后腰保护中路，单前锋身后配置三人。",
+          "ucl": "首轮主场2–3负皇家贝蒂斯，1场0分，进2球、失3球。",
+          "league": "近6场各项赛事3胜1平2负；最近一场为法甲对勒阿弗尔。",
+          "availability": ["伊桑·姆巴佩因首轮红牌被停赛3场，同时有脚踝伤势。", "哈姆扎·伊格曼因前交叉韧带伤势长期缺阵。", "蒂亚戈·桑托斯膝伤缺阵，罗曼·佩罗因碰撞伤存疑。"],
+          "context": "首轮0分；红牌停赛和两侧后卫伤情是已确认的赛前人员约束。"
+        }
+      },
+      "sources": ["https://www.uefa.com/uefachampionsleague/match/2049572--arsenal-vs-lille/", "https://www.sportsmole.co.uk/football/arsenal/champions-league/team-news/arsenal-vs-lille-injury-suspension-list-predicted-xis_606665.html", "https://www.sportsmole.co.uk/football/arsenal/champions-league/preview/arsenal-vs-lille-prediction-team-news-lineups_606658.html"]
+    },
+    {
+      "id": "2049573",
+      "home": "Atleti",
+      "away": "Man United",
+      "venue": "利雅得航空都会球场",
+      "teams": {
+        "Atleti": {
+          "coach": "迭戈·西蒙尼",
+          "shape": "常用4-4-2，中后场以两条四人线为基础。",
+          "ucl": "首轮客场1–2负利物浦，1场0分，进1球、失2球。",
+          "league": "赛前各项赛事连胜4场；最近一场客场2–1胜阿拉维斯。",
+          "availability": ["赛前合练阶段全队可用，索尔洛特和巴里奥斯均已伤愈归队。", "阿尔努·奥尔蒂斯已执行完欧战停赛，本场恢复可用。"],
+          "context": "国内赛事连胜4场，欧冠首轮0分；本场为本赛季首个欧冠主场。"
+        },
+        "Man United": {
+          "coach": "迈克尔·卡里克",
+          "shape": "常用4-2-3-1，双后腰之上配置三名攻击球员。",
+          "ucl": "首轮主场4–0胜萨巴赫，1场3分，进4球、失0球。",
+          "league": "近6场各项赛事1胜3平2负；最近一场主场1–1平托特纳姆热刺。",
+          "availability": ["卢克·肖和科比·梅努在周六比赛中出现伤情，未随队前往马德里。", "本杰明·谢什科、帕特里克·多尔古、德·利赫特、马兹拉维、乌加特和汤姆·赫顿均在赛前缺阵名单中。"],
+          "context": "欧冠首轮3分；与首轮相比，客场阵容新增肖和梅努两名不可用球员。"
+        }
+      },
+      "sources": ["https://www.uefa.com/uefachampionsleague/match/2049573--atleti-vs-man-utd/", "https://www.atleticodemadrid.com/prepartidos/atletico-de-madrid-manchester-united-13-10-2026-21-00", "https://www.mundodeportivo.com/futbol/atletico-madrid/20261012/1004237699/simeone-equipo-apto-medirse-manchester-united.html", "https://www.sportsmole.co.uk/football/atletico-madrid/champions-league/team-news/atletico-madrid-vs-man-united-injury-suspension-list-predicted-xis_606707.html"]
+    },
+    {
+      "id": "2049574",
+      "home": "Leipzig",
+      "away": "PSV",
+      "venue": "红牛竞技场",
+      "teams": {
+        "Leipzig": {
+          "coach": "马丁·德米凯利斯",
+          "shape": "常用4-2-3-1，从后场组织推进，攻守转换中保留前场速度。",
+          "ucl": "首轮客场1–4负科莫，1场0分，进1球、失4球。",
+          "league": "德甲暂列第5，距榜首拜仁慕尼黑2分；10月10日主场6–0胜法兰克福。",
+          "availability": ["马克·吉乌因肌肉伤势缺阵。", "阿桑·韦德拉奥果肩部受伤，克里斯托弗·鲍姆加特纳大腿受伤，两人均无法出场。"],
+          "context": "首轮0分；本场为新赛季首个欧冠主场，球队刚在国内联赛完成6球胜场。"
+        },
+        "PSV": {
+          "coach": "彼得·博斯",
+          "shape": "常用4-3-3主动推进；博斯在赛前发布会表示球队会继续坚持自身的比赛方式。",
+          "ucl": "首轮主场1–1平顿涅茨克矿工，1场1分，进1球、失1球。",
+          "league": "近6场各项赛事4胜1平1负；10月9日国内联赛取胜。",
+          "availability": ["阿达莫·纳加洛本赛季余下时间缺阵；基利安·西尔迪利亚和阿拉桑·普利亚也处于长期伤停。", "保罗·瓦纳、里卡多·佩皮、山姆·拉默斯、萨米·瓦伊萨和杰尔迪·斯浩腾均在伤停名单中。", "博斯在发布会确认，与周五相比没有伤员归队，但布罗·汉森已可加入名单。"],
+          "context": "首轮1分；客场阵容伤号较多，俱乐部已在赛前发布会确认无伤员复出。"
+        }
+      },
+      "sources": ["https://www.uefa.com/uefachampionsleague/match/2049574--leipzig-vs-psv/", "https://rbleipzig.com/de/news/rb-leipzig-psv-eindhoven-zweiter-spieltag-uefa-champions-league", "https://www.psv.nl/media/artikel/persconferentie-het-wordt-vuur-met-vuur-bestrijden", "https://www.sportsmole.co.uk/football/rb-leipzig/preview/rb-leipzig-vs-psv-prediction-team-news-lineups_606701.html"]
+    },
+    {
+      "id": "2049575",
+      "home": "Villarreal",
+      "away": "Napoli",
+      "venue": "陶瓷球场",
+      "teams": {
+        "Villarreal": {
+          "coach": "伊尼戈·佩雷斯",
+          "shape": "常用4-2-3-1，双后腰保护中路，单前锋身后配置三人。",
+          "ucl": "首轮客场2–3负多特蒙德，1场0分，进2球、失3球。",
+          "league": "西甲8轮后2胜2平4负积8分，暂列第11；10月10日客场0–1负皇家马德里。",
+          "availability": ["塔乔恩·布坎南因腿筋伤势缺阵。", "尼古拉斯·佩佩因眼部问题存疑。", "阿约泽·佩雷斯、乔治·米卡乌塔泽与塔尼·奥卢瓦谢伊是现有中锋与前锋人员。"],
+          "context": "欧冠首轮0分，国内联赛位于中游；本场是新赛季首个欧冠主场。"
+        },
+        "Napoli": {
+          "coach": "马西米利亚诺·阿莱格里",
+          "shape": "常用3-5-2；比利亚雷亚尔主帅赛前指出，那不勒斯可在四后卫与五后卫结构之间切换。",
+          "ucl": "首轮主场0–1负阿森纳，1场0分，进0球、失1球。",
+          "league": "最近一场意甲主场3–0胜弗罗西诺内；近6场各项赛事2胜1平3负。",
+          "availability": ["弗兰克·安吉萨因大腿问题连续缺席，本场能否出场仍未得到确认。", "阿利森·桑托斯、亚历山德罗·布翁乔尔诺、马蒂亚斯·奥利维拉、安东尼奥·维尔加拉与科斯塔斯·法瓦苏里在缺阵名单中。", "斯科特·麦克托米奈在小型心脏手术后已复出，亚历克斯·梅雷特也已重返球门。"],
+          "context": "欧冠首轮0分；赛前最近一场国内联赛取胜，但后防与中场仍有多名伤员。"
+        }
+      },
+      "sources": ["https://www.uefa.com/uefachampionsleague/match/2049575--villarreal-vs-napoli/", "https://villarrealcf.es/es/rueda-de-prensa-inigo-perez-vs-ssc-napoli-md2-26-27/", "https://www.sportsmole.co.uk/football/villarreal/champions-league/preview/villarreal-vs-napoli-prediction-team-news-lineups_606662.html"]
+    },
+    {
+      "id": "2049576",
+      "home": "Galatasaray",
+      "away": "Barcelona",
+      "venue": "RAMS公园球场",
+      "teams": {
+        "Galatasaray": {
+          "coach": "奥坎·布鲁克",
+          "shape": "常用4-2-3-1，双后腰之上配置三名攻击球员。",
+          "ucl": "首轮客场1–3负葡萄牙体育，1场0分，进1球、失3球。",
+          "league": "10月9日土超主场3–1胜卡斯帕萨；球队在该场国内联赛中进行了部分轮换。",
+          "availability": ["维尔弗里德·辛戈因大腿问题存疑。", "维克托·奥斯梅恩已从内收肌伤势中复出，上轮联赛替补出场并参与制造了补时进球。", "卢卡斯·托雷拉的国内联赛红牌停赛不适用于欧冠。"],
+          "context": "首轮0分；本场为新赛季首个欧冠主场，而球队上一场国内联赛于10月9日结束。"
+        },
+        "Barcelona": {
+          "coach": "汉斯·弗里克",
+          "shape": "常用4-2-3-1，中后场从后场组织，边路攻击手提供宽度。",
+          "ucl": "首轮主场5–1胜费耶诺德，1场3分，进5球、失1球。",
+          "league": "10月10日西甲主场3–0胜赫塔费；新赛季西甲开局仍保持全胜。",
+          "availability": ["拉菲尼亚因右大腿水肿缺阵，未随队前往伊斯坦布尔。", "安德烈斯·克里斯滕森大腿受伤，鲁尼·巴尔吉因十字韧带伤势缺阵。", "弗兰基·德容未进入伊斯坦布尔出征名单；埃里克·加西亚已结束一场欧战停赛。"],
+          "context": "首轮3分；赛前一场国内联赛于10月10日结束，本场是欧冠第一个客场。"
+        }
+      },
+      "sources": ["https://www.uefa.com/uefachampionsleague/match/2049576--galatasaray-vs-barcelona/", "https://www.galatasaray.org/haber/futbol/sampiyonlar-ligi/maca-dogru-galatasaray-barcelona/61119", "https://www.sportsmole.co.uk/football/galatasaray/champions-league/team-news/galatasaray-vs-barcelona-injury-suspension-list-predicted-xis_606692.html", "https://cadenaser.com/nacional/2026/10/12/flick-ensaya-con-de-jong-como-central-en-los-ultimos-entrenamientos-cadena-ser/"]
+    },
+    {
+      "id": "2049578",
+      "home": "Viking",
+      "away": "Bayern München",
+      "venue": "莱塞竞技场",
+      "teams": {
+        "Viking": {
+          "coach": "比亚特·伦德·奥尔斯海姆 / 莫尔顿·延森",
+          "shape": "由两位联合主教练带队，近期阵容以4-4-2为主。",
+          "ucl": "首轮客场1–3负斯图加特，1场0分，进1球、失3球。",
+          "league": "挪超22轮后积53分，凭相互战绩力压同分的博德闪耀领跑；10月9日客场2–0胜布兰。",
+          "availability": ["已查到的赛前公开资料未列出维京本场新增确认缺阵者。", "主场使用人造草；球队上一场于10月9日进行，到本场间隔4天。"],
+          "context": "欧冠首轮0分，国内联赛暂居榜首；本场为俱乐部新赛季首个欧冠主场。"
+        },
+        "Bayern München": {
+          "coach": "文森特·孔帕尼",
+          "shape": "常用4-2-3-1，双后腰保护中路，前场四人负责压迫与进攻。",
+          "ucl": "首轮主场5–0胜博德闪耀，1场3分，进5球、失0球。",
+          "league": "最近一场德甲与奥格斯堡2–2战平；本场后10月17日将主场对阵RB莱比锡。",
+          "availability": ["贾马尔·穆西亚拉因右大腿肌纤维撕裂继续恢复，是唯一未随队前往挪威的球员。", "曼努埃尔·诺伊尔脚部不适，未参加赛前训练；孔帕尼明确表示约纳斯·乌尔比希将首发守门。", "康拉德·莱默已归队并随队出征。"],
+          "context": "欧冠首轮3分且零封对手；球队提前一天抵达并在人造草场进行适应训练。"
+        }
+      },
+      "sources": ["https://www.uefa.com/uefachampionsleague/match/2049578--viking-vs-bayern-munchen/", "https://fcbayern.com/en/news/matchpreviews/2026/10/preview-viking-bayern-champions-league-matchday-2", "https://fcbayern.com/en/news/2026/10/jamal-musiala-works-towards-comeback", "https://fcbayern.com/de/news/2026/10/fc-bayern-bei-viking-stavanger-das-macht-den-kunstrasen-so-besonders"]
+    }
+  ]
+}

@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "site_data.json"
 RESULTS = ROOT / "data" / "results.json"
 HISTORY = ROOT / "data" / "team_history.json"
+FUNDAMENTALS = ROOT / "data" / "fundamentals_2026-10-13.json"
 TEAMS_DIR = ROOT / "teams"
 ASSETS_DIR = ROOT / "assets"
 
@@ -133,6 +134,12 @@ def load_history() -> dict:
     return json.loads(HISTORY.read_text(encoding="utf-8"))
 
 
+def load_fundamentals() -> dict | None:
+    if not FUNDAMENTALS.exists():
+        return None
+    return json.loads(FUNDAMENTALS.read_text(encoding="utf-8"))
+
+
 def stat(report: dict, side: str, key: str, fallback: str = "官方统计尚未发布") -> str:
     value = (report.get(f"{side}_stats") or {}).get(key)
     return str(value) if value is not None else fallback
@@ -231,7 +238,7 @@ def render_index(data: dict) -> str:
     body = f"""
 <header class="home-hero"><div class="eyebrow">2026—27 · UEFA CHAMPIONS LEAGUE</div>
 <div class="hero-mark" aria-hidden="true">36</div><h1>欧冠联赛阶段<br>俱乐部档案</h1>
-<p>先看本月比赛，再进入球队档案。</p><nav class="home-hero-links"><a href="standings.html">查看联赛积分榜 <b>↗</b></a><a href="matchdays.html">比赛日追踪 <b>↗</b></a></nav></header>
+<p>先看本月比赛，再进入球队档案。</p><nav class="home-hero-links"><a class="today-entry" href="fundamentals.html">今日9场基本面 <b>↗</b></a><a href="standings.html">查看联赛积分榜 <b>↗</b></a><a href="matchdays.html">比赛日追踪 <b>↗</b></a></nav></header>
 <main id="main" class="home-main"><section class="home-section month-section" aria-labelledby="month-title"><div class="home-section-head"><div><p>赛程总览</p><h2 id="month-title">{data_date.month}月比赛日</h2></div><span>{len(month_games)}场比赛 · 所有队名均可跳转</span></div>
 <div class="month-board">{match_days}</div></section>
 <section class="home-section team-section" aria-labelledby="teams-title"><div class="home-section-head"><div><p>俱乐部档案</p><h2 id="teams-title">找到你要看的球队</h2></div><span><b id="team-count">36</b> / 36 支球队</span></div><div class="team-tools"><label class="search-box"><span>搜索球队</span><input id="team-search" type="search" placeholder="输入中文队名" autocomplete="off"></label><label class="filter-box"><span>上赛季欧冠成绩</span><select id="team-filter"><option value="all">全部球队</option><option value="欧冠冠军">欧冠冠军</option><option value="欧冠亚军">欧冠亚军</option><option value="欧冠四强">欧冠四强</option><option value="欧冠八强">欧冠八强</option><option value="欧冠16强">欧冠16强</option><option value="欧冠联赛阶段">联赛阶段</option><option value="欧冠淘汰赛附加赛">淘汰赛附加赛</option><option value="未参加2025-26赛季欧冠">上赛季未参赛</option></select></label><button class="clear-filter" id="clear-team-filter" type="button">清除筛选</button></div><nav aria-label="36支球队"><ol class="team-grid" id="team-directory">{cards}</ol></nav><p class="directory-empty" id="directory-empty" hidden>没有找到匹配的球队，请换一个关键词或筛选条件。</p></section></main>
@@ -265,6 +272,60 @@ def render_standings(data: dict, result_data: dict) -> str:
 <main id="main" class="standings-main"><section class="standings-hero"><p>联赛阶段 · 官方实时汇总</p><h1>积分榜</h1><div class="standings-meta"><span>已结束比赛 <b>{completed}</b></span><span>数据同步 <b>{esc(updated[:16].replace('T', ' '))}</b></span></div></section>
 <section class="standings-card"><div class="table-scroll"><table class="standings-table"><thead><tr><th>排名</th><th>球队</th><th>场</th><th>胜</th><th>平</th><th>负</th><th>进球</th><th>失球</th><th>净胜球</th><th>积分</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div><p class="data-note">排名、积分、进失球与净胜球来自 UEFA 官方积分榜；比赛结束后由自动任务同步。</p></section></main><footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>数据来源：UEFA官方</span></footer>"""
     return layout("2026-27赛季欧冠积分榜", body, description="2026-27赛季欧冠联赛阶段官方积分榜、进失球与净胜球")
+
+
+def personnel_summary(team: dict) -> str:
+    def top_two(rows: list[dict]) -> list[dict]:
+        return sorted(rows, key=lambda item: (-(item.get("fee_m") or -1), item.get("player", "")))[:2]
+
+    arrivals = top_two(team.get("arrivals", []))
+    departures = top_two(team.get("departures", []))
+    parts = []
+    if arrivals:
+        parts.append("主要转入：" + "、".join(f"{player_name(item)}（来自{club_name(item['partner'])}）" for item in arrivals))
+    if departures:
+        parts.append("主要转出：" + "、".join(f"{player_name(item)}（去向{club_name(item['partner'])}）" for item in departures))
+    return "；".join(parts) + "。"
+
+
+def render_availability(items: list[str]) -> str:
+    return '<ul class="availability-list">' + "".join(f"<li>{esc(item)}</li>" for item in items) + "</ul>"
+
+
+def render_fundamentals(data: dict, fundamentals: dict) -> str:
+    fixture_map = {str(game["id"]): game for game in data["fixtures"]}
+    nav_items = []
+    match_sections = []
+    for index, item in enumerate(fundamentals["matches"], start=1):
+        fixture = fixture_map[str(item["id"])]
+        home_key, away_key = item["home"], item["away"]
+        home_team, away_team = data["teams"][home_key], data["teams"][away_key]
+        home_fact, away_fact = item["teams"][home_key], item["teams"][away_key]
+        anchor = f"match-{item['id']}"
+        nav_items.append(
+            f'<a href="#{anchor}"><time>{esc(fixture["time_cet"])}</time><span>{esc(home_team["name_zh"])} <b>vs</b> {esc(away_team["name_zh"])}</span></a>'
+        )
+        rows = [
+            ("主教练与结构", f'<b>{esc(home_fact["coach"])}</b><p>{esc(home_fact["shape"])}</p>', f'<b>{esc(away_fact["coach"])}</b><p>{esc(away_fact["shape"])}</p>'),
+            ("欧冠当前战绩", esc(home_fact["ucl"]), esc(away_fact["ucl"])),
+            ("国内联赛与近况", esc(home_fact["league"]), esc(away_fact["league"])),
+            ("伤停、停赛与可用性", render_availability(home_fact["availability"]), render_availability(away_fact["availability"])),
+            ("人员变化", esc(personnel_summary(home_team)), esc(personnel_summary(away_team))),
+            ("赛事处境（事实）", esc(home_fact["context"]), esc(away_fact["context"])),
+        ]
+        row_markup = "".join(f"<tr><th scope=\"row\">{label}</th><td>{home}</td><td>{away}</td></tr>" for label, home, away in rows)
+        match_sections.append(f'''<section class="fundamental-match" id="{anchor}">
+<div class="fundamental-match-head"><div><span>{index:02d}</span><p>{esc(fixture["time_cet"])} 中欧时间 · {esc(item["venue"])}</p></div><a href="#main">返回顶部 ↑</a></div>
+<div class="fundamental-duel"><a href="teams/{SLUGS[home_key]}.html"><small>主队</small><strong>{esc(home_team["name_zh"])}</strong></a><span>VS</span><a href="teams/{SLUGS[away_key]}.html"><small>客队</small><strong>{esc(away_team["name_zh"])}</strong></a></div>
+<div class="table-scroll"><table class="fundamental-table"><thead><tr><th>项目</th><th>{esc(home_team["name_zh"])}</th><th>{esc(away_team["name_zh"])}</th></tr></thead><tbody>{row_markup}</tbody></table></div>
+<p class="fundamental-source">资料依据：UEFA官方赛程与赛果、俱乐部赛前发布会及当日球队新闻。原始链接已保留在结构化数据中。</p></section>''')
+    meta = fundamentals["meta"]
+    body = f'''<header class="team-top"><a class="back" href="index.html">← 返回首页</a><span>2026—27 · 欧冠联赛阶段</span></header>
+<main id="main" class="fundamental-main"><section class="fundamental-hero"><div><p>比赛日·赛前资料</p><h1>{esc(meta["title"])}</h1><p>{esc(meta["scope"])}</p></div><aside><span>今日场次</span><b>{len(fundamentals["matches"]):02d}</b><small>更新：{esc(meta["updated_at"])}</small></aside></section>
+<nav class="fundamental-nav" aria-label="今日场次导航">{''.join(nav_items)}</nav>
+{''.join(match_sections)}</main>
+<footer class="team-footer"><span>欧洲冠军联赛 · 2026—27</span><span>仅列公开事实，不含赛果判断</span></footer>'''
+    return layout(f'{meta["title"]}｜基本面', body, description=meta["scope"])
 
 
 def fixture_for(team: dict, fixtures: list[dict]) -> list[dict]:
@@ -381,7 +442,7 @@ def render_team_page(team: dict, all_teams: list[dict], fixtures: list[dict], re
 <section class="content-section coach-section"><div class="section-head"><span>03</span><div><p>教练档案</p><h2>现任主教练</h2></div></div>{render_coach(team)}</section>
 <nav class="page-switch" aria-label="切换球队"><a href="{SLUGS[prev_team['key']]}.html"><small>上一队</small>{esc(prev_team['name_zh'])}</a>
 <a class="next" href="{SLUGS[next_team['key']]}.html"><small>下一队</small>{esc(next_team['name_zh'])}</a></nav></main>
-<footer class="team-footer"><span>资料更新：2026年9月8日</span><span>数据来源：UEFA官方、俱乐部官宣、Transfermarkt、FootballDatabase、FBref等</span></footer>"""
+<footer class="team-footer"><span>站点更新：2026年10月13日</span><span>数据来源：UEFA官方、俱乐部官宣、Transfermarkt、FootballDatabase、FBref等</span></footer>"""
     return layout(f"{team['name_zh']}｜2026-27欧冠", body, depth=1, description=f"{team['name_zh']}2026-27赛季欧冠赛程、转会和教练资料")
 
 
@@ -389,11 +450,14 @@ def main() -> None:
     data = json.loads(DATA.read_text(encoding="utf-8"))
     result_data = load_results()
     history_data = load_history()
+    fundamentals = load_fundamentals()
     TEAMS_DIR.mkdir(parents=True, exist_ok=True)
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     (ROOT / "index.html").write_text(render_index(data), encoding="utf-8")
     (ROOT / "standings.html").write_text(render_standings(data, result_data), encoding="utf-8")
     (ROOT / "matchdays.html").write_text(render_matchdays_index(data, result_data), encoding="utf-8")
+    if fundamentals:
+        (ROOT / "fundamentals.html").write_text(render_fundamentals(data, fundamentals), encoding="utf-8")
     matchdays_dir = ROOT / "matchdays"
     matches_dir = ROOT / "matches"
     matchdays_dir.mkdir(exist_ok=True)

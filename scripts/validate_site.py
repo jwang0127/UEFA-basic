@@ -52,6 +52,7 @@ def main() -> None:
     assert len(pages) == 36, len(pages)
     assert (ROOT / "standings.html").exists()
     assert (ROOT / "matchdays.html").exists()
+    assert (ROOT / "fundamentals.html").exists()
     index = (ROOT / "index.html").read_text(encoding="utf-8")
     parser = LinkParser()
     parser.feed(index)
@@ -64,13 +65,19 @@ def main() -> None:
 
     forbidden = re.compile(r"待核|实力评分|出线概率|赛程难度|胜率预测|夺冠概率")
     result_data = json.loads((ROOT / "data" / "results.json").read_text(encoding="utf-8")) if (ROOT / "data" / "results.json").exists() else {"results": {}, "reports": {}}
-    for page in [ROOT / "index.html", ROOT / "standings.html", ROOT / "matchdays.html", *pages, *(ROOT / "matchdays").glob("*.html"), *(ROOT / "matches").glob("*.html")]:
+    for page in [ROOT / "index.html", ROOT / "standings.html", ROOT / "matchdays.html", ROOT / "fundamentals.html", *pages, *(ROOT / "matchdays").glob("*.html"), *(ROOT / "matches").glob("*.html")]:
         text = page.read_text(encoding="utf-8")
         assert not forbidden.search(text), page
         if page.parent.name == "teams":
             assert text.count('class="fixture"') == 8, page
             assert "轮次" not in text, page
             assert "€" in text and "现任主教练" in text and "转会明细" in text
+    fundamentals = (ROOT / "fundamentals.html").read_text(encoding="utf-8")
+    assert fundamentals.count('class="fundamental-match"') == 9
+    for heading in ("主教练与结构", "欧冠当前战绩", "国内联赛与近况", "伤停、停赛与可用性", "人员变化", "赛事处境（事实）"):
+        assert fundamentals.count(heading) == 9, heading
+    for phrase in ("胜率：", "出线概率：", "推荐比分：", "投注建议："):
+        assert phrase not in fundamentals, phrase
     assert set(result_data.get("reports", {})) <= set(result_data.get("results", {}))
     for date_page in (ROOT / "matchdays").glob("*.html"):
         text = date_page.read_text(encoding="utf-8")
@@ -85,7 +92,7 @@ def main() -> None:
             assert item["position_zh"] and item["impact"]
             if item["fee_m"] is not None:
                 assert isinstance(item["fee_m"], (int, float))
-    print("通过：36队、144场、每队8场/4主4客、无同协会与重复对阵、球队/积分榜/比赛日页面、转会教练与禁用词检查")
+    print("通过：36队、144场、每队8场/4主4客、无同协会与重复对阵、球队/积分榜/比赛日/今日基本面页面、转会教练与禁用词检查")
 
 
 if __name__ == "__main__":
