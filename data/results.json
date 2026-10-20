@@ -1,11 +1,101 @@
 {
   "meta": {
-    "updated_at": "2026-10-20T17:59:40+00:00",
+    "updated_at": "2026-10-20T21:39:33+00:00",
     "matches_source": "https://match.uefa.com/v5/matches?competitionId=1&seasonYear=2027&phase=TOURNAMENT&order=DESC&offset=0&limit=200",
     "standings_source": "https://standings.uefa.com/v1/standings?competitionId=1&seasonYear=2027",
-    "completed_matches": 36
+    "completed_matches": 45
   },
   "results": {
+    "2049596": {
+      "id": "2049596",
+      "date": "2026-10-20",
+      "home_en": "Stuttgart",
+      "away_en": "Atleti",
+      "home_score": 1,
+      "away_score": 1,
+      "status": "FINISHED",
+      "source_url": "https://www.uefa.com/uefachampionsleague/match/2049596/"
+    },
+    "2049594": {
+      "id": "2049594",
+      "date": "2026-10-20",
+      "home_en": "Napoli",
+      "away_en": "Bodø/Glimt",
+      "home_score": 4,
+      "away_score": 3,
+      "status": "FINISHED",
+      "source_url": "https://www.uefa.com/uefachampionsleague/match/2049594/"
+    },
+    "2049593": {
+      "id": "2049593",
+      "date": "2026-10-20",
+      "home_en": "Porto",
+      "away_en": "PSV",
+      "home_score": 0,
+      "away_score": 1,
+      "status": "FINISHED",
+      "source_url": "https://www.uefa.com/uefachampionsleague/match/2049593/"
+    },
+    "2049592": {
+      "id": "2049592",
+      "date": "2026-10-20",
+      "home_en": "Roma",
+      "away_en": "Slovan Bratislava",
+      "home_score": 4,
+      "away_score": 0,
+      "status": "FINISHED",
+      "source_url": "https://www.uefa.com/uefachampionsleague/match/2049592/"
+    },
+    "2049591": {
+      "id": "2049591",
+      "date": "2026-10-20",
+      "home_en": "Man City",
+      "away_en": "AEK Athens",
+      "home_score": 5,
+      "away_score": 1,
+      "status": "FINISHED",
+      "source_url": "https://www.uefa.com/uefachampionsleague/match/2049591/"
+    },
+    "2049590": {
+      "id": "2049590",
+      "date": "2026-10-20",
+      "home_en": "Liverpool",
+      "away_en": "Villarreal",
+      "home_score": 4,
+      "away_score": 3,
+      "status": "FINISHED",
+      "source_url": "https://www.uefa.com/uefachampionsleague/match/2049590/"
+    },
+    "2049589": {
+      "id": "2049589",
+      "date": "2026-10-20",
+      "home_en": "Paris",
+      "away_en": "Barcelona",
+      "home_score": 4,
+      "away_score": 2,
+      "status": "FINISHED",
+      "source_url": "https://www.uefa.com/uefachampionsleague/match/2049589/"
+    },
+    "2049597": {
+      "id": "2049597",
+      "date": "2026-10-20",
+      "home_en": "Sabah",
+      "away_en": "Borussia Dortmund",
+      "home_score": 1,
+      "away_score": 2,
+      "status": "FINISHED",
+      "source_url": "https://www.uefa.com/uefachampionsleague/match/2049597/"
+    },
+    "2049595": {
+      "id": "2049595",
+      "date": "2026-10-20",
+      "home_en": "Fenerbahçe",
+      "away_en": "Slavia Praha",
+      "home_score": 2,
+      "away_score": 2,
+      "status": "FINISHED",
+      "source_url": "https://www.uefa.com/uefachampionsleague/match/2049595/"
+    },
     "2049587": {
       "id": "2049587",
       "date": "2026-10-14",
@@ -371,66 +461,78 @@
     {
       "key": "Paris",
       "rank": 1,
-      "played": 2,
-      "won": 2,
+      "played": 3,
+      "won": 3,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 10,
-      "goals_against": 3,
-      "goal_difference": 7,
-      "points": 6
+      "goals_for": 14,
+      "goals_against": 5,
+      "goal_difference": 9,
+      "points": 9
     },
     {
-      "key": "Barcelona",
+      "key": "Liverpool",
       "rank": 2,
-      "played": 2,
-      "won": 2,
+      "played": 3,
+      "won": 3,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 9,
-      "goals_against": 2,
-      "goal_difference": 7,
-      "points": 6
-    },
-    {
-      "key": "Aston Villa",
-      "rank": 3,
-      "played": 2,
-      "won": 2,
-      "drawn": 0,
-      "lost": 0,
-      "goals_for": 9,
-      "goals_against": 2,
-      "goal_difference": 7,
-      "points": 6
+      "goals_for": 12,
+      "goals_against": 7,
+      "goal_difference": 5,
+      "points": 9
     },
     {
       "key": "Stuttgart",
+      "rank": 3,
+      "played": 3,
+      "won": 2,
+      "drawn": 1,
+      "lost": 0,
+      "goals_for": 7,
+      "goals_against": 2,
+      "goal_difference": 5,
+      "points": 7
+    },
+    {
+      "key": "Aston Villa",
       "rank": 4,
       "played": 2,
       "won": 2,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 6,
-      "goals_against": 1,
+      "goals_for": 9,
+      "goals_against": 2,
+      "goal_difference": 7,
+      "points": 6
+    },
+    {
+      "key": "Barcelona",
+      "rank": 5,
+      "played": 3,
+      "won": 2,
+      "drawn": 0,
+      "lost": 1,
+      "goals_for": 11,
+      "goals_against": 6,
       "goal_difference": 5,
       "points": 6
     },
     {
-      "key": "Liverpool",
-      "rank": 5,
-      "played": 2,
+      "key": "Man City",
+      "rank": 6,
+      "played": 3,
       "won": 2,
       "drawn": 0,
-      "lost": 0,
-      "goals_for": 8,
-      "goals_against": 4,
+      "lost": 1,
+      "goals_for": 9,
+      "goals_against": 5,
       "goal_difference": 4,
       "points": 6
     },
     {
       "key": "Sporting CP",
-      "rank": 6,
+      "rank": 7,
       "played": 2,
       "won": 2,
       "drawn": 0,
@@ -442,7 +544,7 @@
     },
     {
       "key": "Arsenal",
-      "rank": 7,
+      "rank": 8,
       "played": 2,
       "won": 2,
       "drawn": 0,
@@ -454,18 +556,6 @@
     },
     {
       "key": "Real Madrid",
-      "rank": 8,
-      "played": 2,
-      "won": 2,
-      "drawn": 0,
-      "lost": 0,
-      "goals_for": 6,
-      "goals_against": 4,
-      "goal_difference": 2,
-      "points": 6
-    },
-    {
-      "key": "Real Betis",
       "rank": 9,
       "played": 2,
       "won": 2,
@@ -477,8 +567,20 @@
       "points": 6
     },
     {
-      "key": "Borussia Dortmund",
+      "key": "Real Betis",
       "rank": 10,
+      "played": 2,
+      "won": 2,
+      "drawn": 0,
+      "lost": 0,
+      "goals_for": 6,
+      "goals_against": 4,
+      "goal_difference": 2,
+      "points": 6
+    },
+    {
+      "key": "Borussia Dortmund",
+      "rank": 11,
       "played": 3,
       "won": 2,
       "drawn": 0,
@@ -490,7 +592,7 @@
     },
     {
       "key": "Bayern München",
-      "rank": 11,
+      "rank": 12,
       "played": 2,
       "won": 1,
       "drawn": 1,
@@ -501,8 +603,20 @@
       "points": 4
     },
     {
+      "key": "Roma",
+      "rank": 13,
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 8,
+      "goals_against": 5,
+      "goal_difference": 3,
+      "points": 4
+    },
+    {
       "key": "Shakhtar",
-      "rank": 12,
+      "rank": 14,
       "played": 2,
       "won": 1,
       "drawn": 1,
@@ -513,20 +627,32 @@
       "points": 4
     },
     {
-      "key": "Fenerbahçe",
-      "rank": 13,
+      "key": "Atleti",
+      "rank": 15,
       "played": 3,
       "won": 1,
       "drawn": 1,
       "lost": 1,
-      "goals_for": 3,
-      "goals_against": 8,
-      "goal_difference": -5,
+      "goals_for": 4,
+      "goals_against": 3,
+      "goal_difference": 1,
+      "points": 4
+    },
+    {
+      "key": "PSV",
+      "rank": 16,
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 2,
+      "goals_against": 2,
+      "goal_difference": 0,
       "points": 4
     },
     {
       "key": "Como",
-      "rank": 14,
+      "rank": 17,
       "played": 2,
       "won": 1,
       "drawn": 0,
@@ -538,7 +664,7 @@
     },
     {
       "key": "Man United",
-      "rank": 15,
+      "rank": 18,
       "played": 2,
       "won": 1,
       "drawn": 0,
@@ -550,31 +676,19 @@
     },
     {
       "key": "Villarreal",
-      "rank": 16,
-      "played": 2,
+      "rank": 19,
+      "played": 3,
       "won": 1,
       "drawn": 0,
-      "lost": 1,
-      "goals_for": 5,
-      "goals_against": 4,
-      "goal_difference": 1,
-      "points": 3
-    },
-    {
-      "key": "Atleti",
-      "rank": 17,
-      "played": 2,
-      "won": 1,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 3,
-      "goals_against": 2,
-      "goal_difference": 1,
+      "lost": 2,
+      "goals_for": 8,
+      "goals_against": 8,
+      "goal_difference": 0,
       "points": 3
     },
     {
       "key": "Club Brugge",
-      "rank": 18,
+      "rank": 20,
       "played": 2,
       "won": 1,
       "drawn": 0,
@@ -585,20 +699,8 @@
       "points": 3
     },
     {
-      "key": "Man City",
-      "rank": 19,
-      "played": 2,
-      "won": 1,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 4,
-      "goals_against": 4,
-      "goal_difference": 0,
-      "points": 3
-    },
-    {
       "key": "Lens",
-      "rank": 20,
+      "rank": 21,
       "played": 2,
       "won": 1,
       "drawn": 0,
@@ -609,20 +711,20 @@
       "points": 3
     },
     {
-      "key": "AEK Athens",
-      "rank": 21,
-      "played": 2,
+      "key": "Napoli",
+      "rank": 22,
+      "played": 3,
       "won": 1,
       "drawn": 0,
-      "lost": 1,
-      "goals_for": 2,
-      "goals_against": 3,
-      "goal_difference": -1,
+      "lost": 2,
+      "goals_for": 5,
+      "goals_against": 7,
+      "goal_difference": -2,
       "points": 3
     },
     {
       "key": "Leipzig",
-      "rank": 22,
+      "rank": 23,
       "played": 2,
       "won": 1,
       "drawn": 0,
@@ -634,7 +736,7 @@
     },
     {
       "key": "Feyenoord",
-      "rank": 23,
+      "rank": 24,
       "played": 2,
       "won": 1,
       "drawn": 0,
@@ -646,7 +748,7 @@
     },
     {
       "key": "Sabah",
-      "rank": 24,
+      "rank": 25,
       "played": 3,
       "won": 1,
       "drawn": 0,
@@ -658,43 +760,43 @@
     },
     {
       "key": "Bodø/Glimt",
-      "rank": 25,
-      "played": 2,
+      "rank": 26,
+      "played": 3,
       "won": 1,
       "drawn": 0,
-      "lost": 1,
-      "goals_for": 1,
-      "goals_against": 5,
-      "goal_difference": -4,
+      "lost": 2,
+      "goals_for": 4,
+      "goals_against": 9,
+      "goal_difference": -5,
       "points": 3
     },
     {
-      "key": "Roma",
-      "rank": 26,
-      "played": 2,
-      "won": 0,
-      "drawn": 1,
-      "lost": 1,
-      "goals_for": 4,
-      "goals_against": 5,
-      "goal_difference": -1,
-      "points": 1
+      "key": "AEK Athens",
+      "rank": 27,
+      "played": 3,
+      "won": 1,
+      "drawn": 0,
+      "lost": 2,
+      "goals_for": 3,
+      "goals_against": 8,
+      "goal_difference": -5,
+      "points": 3
     },
     {
-      "key": "PSV",
-      "rank": 27,
-      "played": 2,
+      "key": "Fenerbahçe",
+      "rank": 28,
+      "played": 3,
       "won": 0,
-      "drawn": 1,
+      "drawn": 2,
       "lost": 1,
-      "goals_for": 1,
-      "goals_against": 2,
-      "goal_difference": -1,
-      "points": 1
+      "goals_for": 3,
+      "goals_against": 9,
+      "goal_difference": -6,
+      "points": 2
     },
     {
       "key": "Viking",
-      "rank": 28,
+      "rank": 29,
       "played": 2,
       "won": 0,
       "drawn": 1,
@@ -702,65 +804,53 @@
       "goals_for": 4,
       "goals_against": 6,
       "goal_difference": -2,
+      "points": 1
+    },
+    {
+      "key": "Slavia Praha",
+      "rank": 30,
+      "played": 3,
+      "won": 0,
+      "drawn": 1,
+      "lost": 2,
+      "goals_for": 4,
+      "goals_against": 7,
+      "goal_difference": -3,
       "points": 1
     },
     {
       "key": "Inter",
-      "rank": 29,
-      "played": 2,
-      "won": 0,
-      "drawn": 0,
-      "lost": 2,
-      "goals_for": 4,
-      "goals_against": 6,
-      "goal_difference": -2,
-      "points": 0
-    },
-    {
-      "key": "Porto",
-      "rank": 30,
-      "played": 2,
-      "won": 0,
-      "drawn": 0,
-      "lost": 2,
-      "goals_for": 2,
-      "goals_against": 5,
-      "goal_difference": -3,
-      "points": 0
-    },
-    {
-      "key": "Napoli",
       "rank": 31,
       "played": 2,
       "won": 0,
       "drawn": 0,
       "lost": 2,
-      "goals_for": 1,
-      "goals_against": 4,
-      "goal_difference": -3,
-      "points": 0
-    },
-    {
-      "key": "Slavia Praha",
-      "rank": 32,
-      "played": 3,
-      "won": 0,
-      "drawn": 0,
-      "lost": 3,
-      "goals_for": 3,
-      "goals_against": 7,
-      "goal_difference": -4,
+      "goals_for": 4,
+      "goals_against": 6,
+      "goal_difference": -2,
       "points": 0
     },
     {
       "key": "LASK",
-      "rank": 33,
+      "rank": 32,
       "played": 2,
       "won": 0,
       "drawn": 0,
       "lost": 2,
       "goals_for": 3,
       "goals_against": 7,
+      "goal_difference": -4,
+      "points": 0
+    },
+    {
+      "key": "Porto",
+      "rank": 33,
+      "played": 3,
+      "won": 0,
+      "drawn": 0,
+      "lost": 3,
+      "goals_for": 2,
+      "goals_against": 6,
       "goal_difference": -4,
       "points": 0
     },
@@ -791,40 +881,40 @@
     {
       "key": "Slovan Bratislava",
       "rank": 36,
-      "played": 2,
+      "played": 3,
       "won": 0,
       "drawn": 0,
-      "lost": 2,
+      "lost": 3,
       "goals_for": 1,
-      "goals_against": 9,
-      "goal_difference": -8,
+      "goals_against": 13,
+      "goal_difference": -12,
       "points": 0
     }
   ],
   "reports": {
-    "2049581": {
+    "2049597": {
       "home_stats": {
-        "goals": 3,
-        "attempts": 14,
-        "attempts_on_target": 7,
-        "passes_accuracy": 89,
-        "fouls_committed": 15,
-        "yellow_cards": 3,
+        "goals": 1,
+        "attempts": 13,
+        "attempts_on_target": 4,
+        "passes_accuracy": 83,
+        "fouls_committed": 8,
+        "yellow_cards": 4,
         "red_cards": 0,
-        "saves": 4,
-        "corners": 5,
+        "saves": 7,
+        "corners": 4,
         "ball_possession": 50,
-        "tackles": 10
+        "tackles": 11
       },
       "away_stats": {
-        "goals": 4,
-        "attempts": 16,
+        "goals": 2,
+        "attempts": 21,
         "attempts_on_target": 8,
         "passes_accuracy": 87,
-        "fouls_committed": 8,
-        "yellow_cards": 1,
+        "fouls_committed": 12,
+        "yellow_cards": 0,
         "red_cards": 0,
-        "saves": 4,
+        "saves": 3,
         "corners": 9,
         "ball_possession": 50,
         "tackles": 11
@@ -850,87 +940,191 @@
         "away": "本场未见官方伤停通报"
       },
       "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049581",
-        "lineups": "https://match.uefa.com/v5/matches/2049581/lineups"
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049597",
+        "lineups": "https://match.uefa.com/v5/matches/2049597/lineups"
       }
     },
-    "2049588": {
+    "2049592": {
       "home_stats": {
-        "goals": 3,
-        "attempts": 12,
+        "goals": 4,
+        "attempts": 27,
+        "attempts_on_target": 10,
+        "passes_accuracy": 90,
+        "fouls_committed": 10,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "saves": 0,
+        "corners": 8,
+        "ball_possession": 66,
+        "tackles": 5
+      },
+      "away_stats": {
+        "goals": 0,
+        "attempts": 1,
+        "attempts_on_target": 0,
+        "passes_accuracy": 75,
+        "fouls_committed": 10,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 6,
+        "corners": 1,
+        "ball_possession": 34,
+        "tackles": 6
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049592",
+        "lineups": "https://match.uefa.com/v5/matches/2049592/lineups"
+      }
+    },
+    "2049593": {
+      "home_stats": {
+        "goals": 0,
+        "attempts": 15,
         "attempts_on_target": 4,
         "passes_accuracy": 82,
         "fouls_committed": 7,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "saves": 2,
-        "corners": 3,
-        "ball_possession": 38,
-        "tackles": 22
-      },
-      "away_stats": {
-        "goals": 6,
-        "attempts": 26,
-        "attempts_on_target": 8,
-        "passes_accuracy": 92,
-        "fouls_committed": 4,
         "yellow_cards": 0,
         "red_cards": 0,
-        "saves": 1,
-        "corners": 11,
-        "ball_possession": 62,
-        "tackles": 8
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049588",
-        "lineups": "https://match.uefa.com/v5/matches/2049588/lineups"
-      }
-    },
-    "2049586": {
-      "home_stats": {
-        "goals": 3,
-        "attempts": 11,
-        "attempts_on_target": 4,
-        "passes_accuracy": 92,
-        "fouls_committed": 16,
-        "yellow_cards": 1,
-        "red_cards": 0,
         "saves": 2,
-        "corners": 5,
-        "ball_possession": 56,
-        "tackles": 10
+        "corners": 2,
+        "ball_possession": 40,
+        "tackles": 15
       },
       "away_stats": {
         "goals": 1,
-        "attempts": 12,
+        "attempts": 17,
         "attempts_on_target": 3,
-        "passes_accuracy": 87,
-        "fouls_committed": 17,
-        "yellow_cards": 4,
+        "passes_accuracy": 88,
+        "fouls_committed": 9,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "saves": 4,
+        "corners": 3,
+        "ball_possession": 60,
+        "tackles": 19
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049593",
+        "lineups": "https://match.uefa.com/v5/matches/2049593/lineups"
+      }
+    },
+    "2049591": {
+      "home_stats": {
+        "goals": 5,
+        "attempts": 16,
+        "attempts_on_target": 6,
+        "passes_accuracy": 94,
+        "fouls_committed": 6,
+        "yellow_cards": 1,
         "red_cards": 0,
         "saves": 2,
+        "corners": 8,
+        "ball_possession": 60,
+        "tackles": 8
+      },
+      "away_stats": {
+        "goals": 1,
+        "attempts": 11,
+        "attempts_on_target": 3,
+        "passes_accuracy": 89,
+        "fouls_committed": 10,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "saves": 1,
+        "corners": 3,
+        "ball_possession": 40,
+        "tackles": 15
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049591",
+        "lineups": "https://match.uefa.com/v5/matches/2049591/lineups"
+      }
+    },
+    "2049589": {
+      "home_stats": {
+        "goals": 4,
+        "attempts": 21,
+        "attempts_on_target": 13,
+        "passes_accuracy": 88,
+        "fouls_committed": 11,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "saves": 3,
         "corners": 2,
-        "ball_possession": 44,
+        "ball_possession": 47,
+        "tackles": 17
+      },
+      "away_stats": {
+        "goals": 2,
+        "attempts": 17,
+        "attempts_on_target": 5,
+        "passes_accuracy": 89,
+        "fouls_committed": 10,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 9,
+        "corners": 3,
+        "ball_possession": 53,
         "tackles": 10
       },
       "lineups": {
@@ -954,36 +1148,36 @@
         "away": "本场未见官方伤停通报"
       },
       "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049586",
-        "lineups": "https://match.uefa.com/v5/matches/2049586/lineups"
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049589",
+        "lineups": "https://match.uefa.com/v5/matches/2049589/lineups"
       }
     },
-    "2049580": {
+    "2049594": {
       "home_stats": {
-        "goals": 2,
-        "attempts": 25,
+        "goals": 4,
+        "attempts": 17,
         "attempts_on_target": 8,
-        "passes_accuracy": 86,
-        "fouls_committed": 10,
-        "yellow_cards": 1,
+        "passes_accuracy": 91,
+        "fouls_committed": 7,
+        "yellow_cards": 3,
         "red_cards": 0,
-        "saves": 5,
-        "corners": 11,
-        "ball_possession": 52,
-        "tackles": 17
+        "saves": 3,
+        "corners": 2,
+        "ball_possession": 45,
+        "tackles": 10
       },
       "away_stats": {
-        "goals": 4,
+        "goals": 3,
         "attempts": 15,
-        "attempts_on_target": 9,
-        "passes_accuracy": 85,
-        "fouls_committed": 11,
-        "yellow_cards": 1,
+        "attempts_on_target": 6,
+        "passes_accuracy": 92,
+        "fouls_committed": 5,
+        "yellow_cards": 0,
         "red_cards": 0,
-        "saves": 8,
-        "corners": 2,
-        "ball_possession": 48,
-        "tackles": 24
+        "saves": 5,
+        "corners": 5,
+        "ball_possession": 55,
+        "tackles": 4
       },
       "lineups": {
         "home": {
@@ -1006,8 +1200,112 @@
         "away": "本场未见官方伤停通报"
       },
       "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049580",
-        "lineups": "https://match.uefa.com/v5/matches/2049580/lineups"
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049594",
+        "lineups": "https://match.uefa.com/v5/matches/2049594/lineups"
+      }
+    },
+    "2049590": {
+      "home_stats": {
+        "goals": 4,
+        "attempts": 22,
+        "attempts_on_target": 8,
+        "passes_accuracy": 86,
+        "fouls_committed": 12,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 7,
+        "ball_possession": 54,
+        "tackles": 6
+      },
+      "away_stats": {
+        "goals": 3,
+        "attempts": 12,
+        "attempts_on_target": 5,
+        "passes_accuracy": 85,
+        "fouls_committed": 10,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "saves": 4,
+        "corners": 2,
+        "ball_possession": 46,
+        "tackles": 12
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049590",
+        "lineups": "https://match.uefa.com/v5/matches/2049590/lineups"
+      }
+    },
+    "2049596": {
+      "home_stats": {
+        "goals": 1,
+        "attempts": 18,
+        "attempts_on_target": 5,
+        "passes_accuracy": 90,
+        "fouls_committed": 15,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 9,
+        "ball_possession": 54,
+        "tackles": 19
+      },
+      "away_stats": {
+        "goals": 1,
+        "attempts": 11,
+        "attempts_on_target": 3,
+        "passes_accuracy": 86,
+        "fouls_committed": 7,
+        "yellow_cards": 1,
+        "red_cards": 1,
+        "saves": 4,
+        "corners": 4,
+        "ball_possession": 46,
+        "tackles": 9
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049596",
+        "lineups": "https://match.uefa.com/v5/matches/2049596/lineups"
       }
     },
     "2049585": {
@@ -1062,6 +1360,110 @@
         "lineups": "https://match.uefa.com/v5/matches/2049585/lineups"
       }
     },
+    "2049586": {
+      "home_stats": {
+        "goals": 3,
+        "attempts": 11,
+        "attempts_on_target": 4,
+        "passes_accuracy": 92,
+        "fouls_committed": 16,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 5,
+        "ball_possession": 56,
+        "tackles": 10
+      },
+      "away_stats": {
+        "goals": 1,
+        "attempts": 12,
+        "attempts_on_target": 3,
+        "passes_accuracy": 87,
+        "fouls_committed": 17,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 2,
+        "ball_possession": 44,
+        "tackles": 10
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049586",
+        "lineups": "https://match.uefa.com/v5/matches/2049586/lineups"
+      }
+    },
+    "2049595": {
+      "home_stats": {
+        "goals": 2,
+        "attempts": 15,
+        "attempts_on_target": 5,
+        "passes_accuracy": 83,
+        "fouls_committed": 12,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 3,
+        "ball_possession": 51,
+        "tackles": 18
+      },
+      "away_stats": {
+        "goals": 2,
+        "attempts": 15,
+        "attempts_on_target": 4,
+        "passes_accuracy": 83,
+        "fouls_committed": 15,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 3,
+        "corners": 5,
+        "ball_possession": 49,
+        "tackles": 18
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049595",
+        "lineups": "https://match.uefa.com/v5/matches/2049595/lineups"
+      }
+    },
     "2049587": {
       "home_stats": {
         "goals": 0,
@@ -1114,32 +1516,32 @@
         "lineups": "https://match.uefa.com/v5/matches/2049587/lineups"
       }
     },
-    "2049575": {
+    "2049583": {
       "home_stats": {
         "goals": 3,
         "attempts": 17,
-        "attempts_on_target": 4,
+        "attempts_on_target": 7,
         "passes_accuracy": 87,
-        "fouls_committed": 8,
-        "yellow_cards": 2,
+        "fouls_committed": 14,
+        "yellow_cards": 4,
         "red_cards": 0,
-        "saves": 2,
-        "corners": 4,
-        "ball_possession": 52,
-        "tackles": 12
+        "saves": 3,
+        "corners": 5,
+        "ball_possession": 55,
+        "tackles": 19
       },
       "away_stats": {
-        "goals": 1,
+        "goals": 2,
         "attempts": 11,
-        "attempts_on_target": 3,
-        "passes_accuracy": 84,
+        "attempts_on_target": 5,
+        "passes_accuracy": 83,
         "fouls_committed": 15,
-        "yellow_cards": 3,
-        "red_cards": 0,
-        "saves": 1,
-        "corners": 4,
-        "ball_possession": 48,
-        "tackles": 19
+        "yellow_cards": 5,
+        "red_cards": 1,
+        "saves": 4,
+        "corners": 1,
+        "ball_possession": 45,
+        "tackles": 15
       },
       "lineups": {
         "home": {
@@ -1162,8 +1564,8 @@
         "away": "本场未见官方伤停通报"
       },
       "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049575",
-        "lineups": "https://match.uefa.com/v5/matches/2049575/lineups"
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049583",
+        "lineups": "https://match.uefa.com/v5/matches/2049583/lineups"
       }
     },
     "2049582": {
@@ -1218,6 +1620,162 @@
         "lineups": "https://match.uefa.com/v5/matches/2049582/lineups"
       }
     },
+    "2049581": {
+      "home_stats": {
+        "goals": 3,
+        "attempts": 14,
+        "attempts_on_target": 7,
+        "passes_accuracy": 89,
+        "fouls_committed": 15,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 4,
+        "corners": 5,
+        "ball_possession": 50,
+        "tackles": 10
+      },
+      "away_stats": {
+        "goals": 4,
+        "attempts": 16,
+        "attempts_on_target": 8,
+        "passes_accuracy": 87,
+        "fouls_committed": 8,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 4,
+        "corners": 9,
+        "ball_possession": 50,
+        "tackles": 11
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049581",
+        "lineups": "https://match.uefa.com/v5/matches/2049581/lineups"
+      }
+    },
+    "2049580": {
+      "home_stats": {
+        "goals": 2,
+        "attempts": 25,
+        "attempts_on_target": 8,
+        "passes_accuracy": 86,
+        "fouls_committed": 10,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 5,
+        "corners": 11,
+        "ball_possession": 52,
+        "tackles": 17
+      },
+      "away_stats": {
+        "goals": 4,
+        "attempts": 15,
+        "attempts_on_target": 9,
+        "passes_accuracy": 85,
+        "fouls_committed": 11,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 8,
+        "corners": 2,
+        "ball_possession": 48,
+        "tackles": 24
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049580",
+        "lineups": "https://match.uefa.com/v5/matches/2049580/lineups"
+      }
+    },
+    "2049588": {
+      "home_stats": {
+        "goals": 3,
+        "attempts": 12,
+        "attempts_on_target": 4,
+        "passes_accuracy": 82,
+        "fouls_committed": 7,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 3,
+        "ball_possession": 38,
+        "tackles": 22
+      },
+      "away_stats": {
+        "goals": 6,
+        "attempts": 26,
+        "attempts_on_target": 8,
+        "passes_accuracy": 92,
+        "fouls_committed": 4,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "saves": 1,
+        "corners": 11,
+        "ball_possession": 62,
+        "tackles": 8
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049588",
+        "lineups": "https://match.uefa.com/v5/matches/2049588/lineups"
+      }
+    },
     "2049578": {
       "home_stats": {
         "goals": 3,
@@ -1268,6 +1826,58 @@
       "source_urls": {
         "stats": "https://matchstats.uefa.com/v1/team-statistics/2049578",
         "lineups": "https://match.uefa.com/v5/matches/2049578/lineups"
+      }
+    },
+    "2049575": {
+      "home_stats": {
+        "goals": 3,
+        "attempts": 17,
+        "attempts_on_target": 4,
+        "passes_accuracy": 87,
+        "fouls_committed": 8,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 4,
+        "ball_possession": 52,
+        "tackles": 12
+      },
+      "away_stats": {
+        "goals": 1,
+        "attempts": 11,
+        "attempts_on_target": 3,
+        "passes_accuracy": 84,
+        "fouls_committed": 15,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 1,
+        "corners": 4,
+        "ball_possession": 48,
+        "tackles": 19
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049575",
+        "lineups": "https://match.uefa.com/v5/matches/2049575/lineups"
       }
     },
     "2049574": {
@@ -1322,58 +1932,6 @@
         "lineups": "https://match.uefa.com/v5/matches/2049574/lineups"
       }
     },
-    "2049576": {
-      "home_stats": {
-        "goals": 1,
-        "attempts": 5,
-        "attempts_on_target": 3,
-        "passes_accuracy": 79,
-        "fouls_committed": 12,
-        "yellow_cards": 2,
-        "red_cards": 0,
-        "saves": 6,
-        "corners": 1,
-        "ball_possession": 35,
-        "tackles": 28
-      },
-      "away_stats": {
-        "goals": 4,
-        "attempts": 22,
-        "attempts_on_target": 10,
-        "passes_accuracy": 92,
-        "fouls_committed": 10,
-        "yellow_cards": 0,
-        "red_cards": 0,
-        "saves": 2,
-        "corners": 6,
-        "ball_possession": 65,
-        "tackles": 15
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049576",
-        "lineups": "https://match.uefa.com/v5/matches/2049576/lineups"
-      }
-    },
     "2049584": {
       "home_stats": {
         "goals": 3,
@@ -1424,6 +1982,58 @@
       "source_urls": {
         "stats": "https://matchstats.uefa.com/v1/team-statistics/2049584",
         "lineups": "https://match.uefa.com/v5/matches/2049584/lineups"
+      }
+    },
+    "2049576": {
+      "home_stats": {
+        "goals": 1,
+        "attempts": 5,
+        "attempts_on_target": 3,
+        "passes_accuracy": 79,
+        "fouls_committed": 12,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "saves": 6,
+        "corners": 1,
+        "ball_possession": 35,
+        "tackles": 28
+      },
+      "away_stats": {
+        "goals": 4,
+        "attempts": 22,
+        "attempts_on_target": 10,
+        "passes_accuracy": 92,
+        "fouls_committed": 10,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 6,
+        "ball_possession": 65,
+        "tackles": 15
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049576",
+        "lineups": "https://match.uefa.com/v5/matches/2049576/lineups"
       }
     },
     "2049573": {
@@ -1478,32 +2088,32 @@
         "lineups": "https://match.uefa.com/v5/matches/2049573/lineups"
       }
     },
-    "2049583": {
+    "2049572": {
       "home_stats": {
         "goals": 3,
-        "attempts": 17,
-        "attempts_on_target": 7,
-        "passes_accuracy": 87,
-        "fouls_committed": 14,
-        "yellow_cards": 4,
+        "attempts": 16,
+        "attempts_on_target": 8,
+        "passes_accuracy": 91,
+        "fouls_committed": 13,
+        "yellow_cards": 2,
         "red_cards": 0,
-        "saves": 3,
-        "corners": 5,
-        "ball_possession": 55,
-        "tackles": 19
+        "saves": 0,
+        "corners": 7,
+        "ball_possession": 53,
+        "tackles": 10
       },
       "away_stats": {
-        "goals": 2,
-        "attempts": 11,
-        "attempts_on_target": 5,
-        "passes_accuracy": 83,
-        "fouls_committed": 15,
-        "yellow_cards": 5,
-        "red_cards": 1,
-        "saves": 4,
-        "corners": 1,
-        "ball_possession": 45,
-        "tackles": 15
+        "goals": 0,
+        "attempts": 4,
+        "attempts_on_target": 0,
+        "passes_accuracy": 86,
+        "fouls_committed": 9,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 5,
+        "corners": 0,
+        "ball_possession": 47,
+        "tackles": 22
       },
       "lineups": {
         "home": {
@@ -1526,8 +2136,8 @@
         "away": "本场未见官方伤停通报"
       },
       "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049583",
-        "lineups": "https://match.uefa.com/v5/matches/2049583/lineups"
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049572",
+        "lineups": "https://match.uefa.com/v5/matches/2049572/lineups"
       }
     },
     "2049577": {
@@ -1634,58 +2244,6 @@
         "lineups": "https://match.uefa.com/v5/matches/2049579/lineups"
       }
     },
-    "2049569": {
-      "home_stats": {
-        "goals": 2,
-        "attempts": 17,
-        "attempts_on_target": 4,
-        "passes_accuracy": 72,
-        "fouls_committed": 8,
-        "yellow_cards": 0,
-        "red_cards": 2,
-        "saves": 4,
-        "corners": 6,
-        "ball_possession": 42,
-        "tackles": 11
-      },
-      "away_stats": {
-        "goals": 3,
-        "attempts": 26,
-        "attempts_on_target": 7,
-        "passes_accuracy": 82,
-        "fouls_committed": 8,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "saves": 2,
-        "corners": 9,
-        "ball_possession": 58,
-        "tackles": 12
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049569",
-        "lineups": "https://match.uefa.com/v5/matches/2049569/lineups"
-      }
-    },
     "2049570": {
       "home_stats": {
         "goals": 4,
@@ -1736,162 +2294,6 @@
       "source_urls": {
         "stats": "https://matchstats.uefa.com/v1/team-statistics/2049570",
         "lineups": "https://match.uefa.com/v5/matches/2049570/lineups"
-      }
-    },
-    "2049572": {
-      "home_stats": {
-        "goals": 3,
-        "attempts": 16,
-        "attempts_on_target": 8,
-        "passes_accuracy": 91,
-        "fouls_committed": 13,
-        "yellow_cards": 2,
-        "red_cards": 0,
-        "saves": 0,
-        "corners": 7,
-        "ball_possession": 53,
-        "tackles": 10
-      },
-      "away_stats": {
-        "goals": 0,
-        "attempts": 4,
-        "attempts_on_target": 0,
-        "passes_accuracy": 86,
-        "fouls_committed": 9,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "saves": 5,
-        "corners": 0,
-        "ball_possession": 47,
-        "tackles": 22
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049572",
-        "lineups": "https://match.uefa.com/v5/matches/2049572/lineups"
-      }
-    },
-    "2049565": {
-      "home_stats": {
-        "goals": 5,
-        "attempts": 25,
-        "attempts_on_target": 11,
-        "passes_accuracy": 93,
-        "fouls_committed": 5,
-        "yellow_cards": 0,
-        "red_cards": 0,
-        "saves": 0,
-        "corners": 6,
-        "ball_possession": 57,
-        "tackles": 8
-      },
-      "away_stats": {
-        "goals": 0,
-        "attempts": 2,
-        "attempts_on_target": 0,
-        "passes_accuracy": 83,
-        "fouls_committed": 8,
-        "yellow_cards": 1,
-        "red_cards": 1,
-        "saves": 6,
-        "corners": 3,
-        "ball_possession": 43,
-        "tackles": 17
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049565",
-        "lineups": "https://match.uefa.com/v5/matches/2049565/lineups"
-      }
-    },
-    "2049563": {
-      "home_stats": {
-        "goals": 0,
-        "attempts": 5,
-        "attempts_on_target": 3,
-        "passes_accuracy": 87,
-        "fouls_committed": 12,
-        "yellow_cards": 2,
-        "red_cards": 0,
-        "saves": 7,
-        "corners": 0,
-        "ball_possession": 44,
-        "tackles": 13
-      },
-      "away_stats": {
-        "goals": 1,
-        "attempts": 26,
-        "attempts_on_target": 7,
-        "passes_accuracy": 93,
-        "fouls_committed": 11,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "saves": 3,
-        "corners": 6,
-        "ball_possession": 56,
-        "tackles": 17
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049563",
-        "lineups": "https://match.uefa.com/v5/matches/2049563/lineups"
       }
     },
     "2049571": {
@@ -1946,58 +2348,6 @@
         "lineups": "https://match.uefa.com/v5/matches/2049571/lineups"
       }
     },
-    "2049562": {
-      "home_stats": {
-        "goals": 3,
-        "attempts": 8,
-        "attempts_on_target": 5,
-        "passes_accuracy": 83,
-        "fouls_committed": 13,
-        "yellow_cards": 2,
-        "red_cards": 0,
-        "saves": 4,
-        "corners": 1,
-        "ball_possession": 40,
-        "tackles": 11
-      },
-      "away_stats": {
-        "goals": 1,
-        "attempts": 10,
-        "attempts_on_target": 4,
-        "passes_accuracy": 91,
-        "fouls_committed": 11,
-        "yellow_cards": 4,
-        "red_cards": 0,
-        "saves": 2,
-        "corners": 4,
-        "ball_possession": 60,
-        "tackles": 11
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049562",
-        "lineups": "https://match.uefa.com/v5/matches/2049562/lineups"
-      }
-    },
     "2049566": {
       "home_stats": {
         "goals": 4,
@@ -2050,32 +2400,32 @@
         "lineups": "https://match.uefa.com/v5/matches/2049566/lineups"
       }
     },
-    "2049568": {
+    "2049565": {
       "home_stats": {
-        "goals": 1,
-        "attempts": 11,
-        "attempts_on_target": 5,
-        "passes_accuracy": 85,
-        "fouls_committed": 12,
-        "yellow_cards": 4,
+        "goals": 5,
+        "attempts": 25,
+        "attempts_on_target": 11,
+        "passes_accuracy": 93,
+        "fouls_committed": 5,
+        "yellow_cards": 0,
         "red_cards": 0,
-        "saves": 2,
-        "corners": 1,
-        "ball_possession": 42,
-        "tackles": 24
+        "saves": 0,
+        "corners": 6,
+        "ball_possession": 57,
+        "tackles": 8
       },
       "away_stats": {
-        "goals": 1,
-        "attempts": 8,
-        "attempts_on_target": 3,
-        "passes_accuracy": 91,
-        "fouls_committed": 19,
-        "yellow_cards": 2,
-        "red_cards": 0,
-        "saves": 5,
+        "goals": 0,
+        "attempts": 2,
+        "attempts_on_target": 0,
+        "passes_accuracy": 83,
+        "fouls_committed": 8,
+        "yellow_cards": 1,
+        "red_cards": 1,
+        "saves": 6,
         "corners": 3,
-        "ball_possession": 58,
-        "tackles": 14
+        "ball_possession": 43,
+        "tackles": 17
       },
       "lineups": {
         "home": {
@@ -2098,8 +2448,164 @@
         "away": "本场未见官方伤停通报"
       },
       "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049568",
-        "lineups": "https://match.uefa.com/v5/matches/2049568/lineups"
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049565",
+        "lineups": "https://match.uefa.com/v5/matches/2049565/lineups"
+      }
+    },
+    "2049569": {
+      "home_stats": {
+        "goals": 2,
+        "attempts": 17,
+        "attempts_on_target": 4,
+        "passes_accuracy": 72,
+        "fouls_committed": 8,
+        "yellow_cards": 0,
+        "red_cards": 2,
+        "saves": 4,
+        "corners": 6,
+        "ball_possession": 42,
+        "tackles": 11
+      },
+      "away_stats": {
+        "goals": 3,
+        "attempts": 26,
+        "attempts_on_target": 7,
+        "passes_accuracy": 82,
+        "fouls_committed": 8,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 9,
+        "ball_possession": 58,
+        "tackles": 12
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049569",
+        "lineups": "https://match.uefa.com/v5/matches/2049569/lineups"
+      }
+    },
+    "2049563": {
+      "home_stats": {
+        "goals": 0,
+        "attempts": 5,
+        "attempts_on_target": 3,
+        "passes_accuracy": 87,
+        "fouls_committed": 12,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "saves": 7,
+        "corners": 0,
+        "ball_possession": 44,
+        "tackles": 13
+      },
+      "away_stats": {
+        "goals": 1,
+        "attempts": 26,
+        "attempts_on_target": 7,
+        "passes_accuracy": 93,
+        "fouls_committed": 11,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 3,
+        "corners": 6,
+        "ball_possession": 56,
+        "tackles": 17
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049563",
+        "lineups": "https://match.uefa.com/v5/matches/2049563/lineups"
+      }
+    },
+    "2049562": {
+      "home_stats": {
+        "goals": 3,
+        "attempts": 8,
+        "attempts_on_target": 5,
+        "passes_accuracy": 83,
+        "fouls_committed": 13,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "saves": 4,
+        "corners": 1,
+        "ball_possession": 40,
+        "tackles": 11
+      },
+      "away_stats": {
+        "goals": 1,
+        "attempts": 10,
+        "attempts_on_target": 4,
+        "passes_accuracy": 91,
+        "fouls_committed": 11,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 4,
+        "ball_possession": 60,
+        "tackles": 11
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049562",
+        "lineups": "https://match.uefa.com/v5/matches/2049562/lineups"
       }
     },
     "2049560": {
@@ -2154,6 +2660,110 @@
         "lineups": "https://match.uefa.com/v5/matches/2049560/lineups"
       }
     },
+    "2049567": {
+      "home_stats": {
+        "goals": 1,
+        "attempts": 9,
+        "attempts_on_target": 2,
+        "passes_accuracy": 90,
+        "fouls_committed": 14,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 1,
+        "corners": 3,
+        "ball_possession": 49,
+        "tackles": 20
+      },
+      "away_stats": {
+        "goals": 1,
+        "attempts": 7,
+        "attempts_on_target": 2,
+        "passes_accuracy": 85,
+        "fouls_committed": 15,
+        "yellow_cards": 8,
+        "red_cards": 0,
+        "saves": 1,
+        "corners": 3,
+        "ball_possession": 51,
+        "tackles": 21
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049567",
+        "lineups": "https://match.uefa.com/v5/matches/2049567/lineups"
+      }
+    },
+    "2049568": {
+      "home_stats": {
+        "goals": 1,
+        "attempts": 11,
+        "attempts_on_target": 5,
+        "passes_accuracy": 85,
+        "fouls_committed": 12,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "saves": 2,
+        "corners": 1,
+        "ball_possession": 42,
+        "tackles": 24
+      },
+      "away_stats": {
+        "goals": 1,
+        "attempts": 8,
+        "attempts_on_target": 3,
+        "passes_accuracy": 91,
+        "fouls_committed": 19,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "saves": 5,
+        "corners": 3,
+        "ball_possession": 58,
+        "tackles": 14
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049568",
+        "lineups": "https://match.uefa.com/v5/matches/2049568/lineups"
+      }
+    },
     "2049559": {
       "home_stats": {
         "goals": 6,
@@ -2206,31 +2816,31 @@
         "lineups": "https://match.uefa.com/v5/matches/2049559/lineups"
       }
     },
-    "2049567": {
+    "2049564": {
       "home_stats": {
-        "goals": 1,
-        "attempts": 9,
-        "attempts_on_target": 2,
-        "passes_accuracy": 90,
-        "fouls_committed": 14,
-        "yellow_cards": 3,
+        "goals": 3,
+        "attempts": 17,
+        "attempts_on_target": 3,
+        "passes_accuracy": 87,
+        "fouls_committed": 13,
+        "yellow_cards": 0,
         "red_cards": 0,
-        "saves": 1,
+        "saves": 2,
         "corners": 3,
-        "ball_possession": 49,
-        "tackles": 20
+        "ball_possession": 60,
+        "tackles": 11
       },
       "away_stats": {
         "goals": 1,
-        "attempts": 7,
-        "attempts_on_target": 2,
-        "passes_accuracy": 85,
-        "fouls_committed": 15,
-        "yellow_cards": 8,
+        "attempts": 10,
+        "attempts_on_target": 3,
+        "passes_accuracy": 74,
+        "fouls_committed": 13,
+        "yellow_cards": 3,
         "red_cards": 0,
-        "saves": 1,
-        "corners": 3,
-        "ball_possession": 51,
+        "saves": 0,
+        "corners": 5,
+        "ball_possession": 40,
         "tackles": 21
       },
       "lineups": {
@@ -2254,8 +2864,8 @@
         "away": "本场未见官方伤停通报"
       },
       "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049567",
-        "lineups": "https://match.uefa.com/v5/matches/2049567/lineups"
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049564",
+        "lineups": "https://match.uefa.com/v5/matches/2049564/lineups"
       }
     },
     "2049561": {
@@ -2310,110 +2920,6 @@
         "lineups": "https://match.uefa.com/v5/matches/2049561/lineups"
       }
     },
-    "2049555": {
-      "home_stats": {
-        "goals": 0,
-        "attempts": 5,
-        "attempts_on_target": 0,
-        "passes_accuracy": 82,
-        "fouls_committed": 10,
-        "yellow_cards": 2,
-        "red_cards": 0,
-        "saves": 8,
-        "corners": 2,
-        "ball_possession": 41,
-        "tackles": 16
-      },
-      "away_stats": {
-        "goals": 2,
-        "attempts": 20,
-        "attempts_on_target": 10,
-        "passes_accuracy": 92,
-        "fouls_committed": 17,
-        "yellow_cards": 3,
-        "red_cards": 0,
-        "saves": 0,
-        "corners": 5,
-        "ball_possession": 59,
-        "tackles": 13
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049555",
-        "lineups": "https://match.uefa.com/v5/matches/2049555/lineups"
-      }
-    },
-    "2049553": {
-      "home_stats": {
-        "goals": 2,
-        "attempts": 16,
-        "attempts_on_target": 8,
-        "passes_accuracy": 88,
-        "fouls_committed": 12,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "saves": 7,
-        "corners": 4,
-        "ball_possession": 39,
-        "tackles": 15
-      },
-      "away_stats": {
-        "goals": 1,
-        "attempts": 19,
-        "attempts_on_target": 7,
-        "passes_accuracy": 94,
-        "fouls_committed": 10,
-        "yellow_cards": 3,
-        "red_cards": 0,
-        "saves": 6,
-        "corners": 11,
-        "ball_possession": 61,
-        "tackles": 11
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049553",
-        "lineups": "https://match.uefa.com/v5/matches/2049553/lineups"
-      }
-    },
     "2049554": {
       "home_stats": {
         "goals": 3,
@@ -2464,58 +2970,6 @@
       "source_urls": {
         "stats": "https://matchstats.uefa.com/v1/team-statistics/2049554",
         "lineups": "https://match.uefa.com/v5/matches/2049554/lineups"
-      }
-    },
-    "2049556": {
-      "home_stats": {
-        "goals": 2,
-        "attempts": 14,
-        "attempts_on_target": 7,
-        "passes_accuracy": 89,
-        "fouls_committed": 17,
-        "yellow_cards": 3,
-        "red_cards": 0,
-        "saves": 5,
-        "corners": 4,
-        "ball_possession": 56,
-        "tackles": 17
-      },
-      "away_stats": {
-        "goals": 3,
-        "attempts": 21,
-        "attempts_on_target": 8,
-        "passes_accuracy": 84,
-        "fouls_committed": 14,
-        "yellow_cards": 3,
-        "red_cards": 0,
-        "saves": 5,
-        "corners": 5,
-        "ball_possession": 44,
-        "tackles": 21
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049556",
-        "lineups": "https://match.uefa.com/v5/matches/2049556/lineups"
       }
     },
     "2049557": {
@@ -2570,6 +3024,162 @@
         "lineups": "https://match.uefa.com/v5/matches/2049557/lineups"
       }
     },
+    "2049553": {
+      "home_stats": {
+        "goals": 2,
+        "attempts": 16,
+        "attempts_on_target": 8,
+        "passes_accuracy": 88,
+        "fouls_committed": 12,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 7,
+        "corners": 4,
+        "ball_possession": 39,
+        "tackles": 15
+      },
+      "away_stats": {
+        "goals": 1,
+        "attempts": 19,
+        "attempts_on_target": 7,
+        "passes_accuracy": 94,
+        "fouls_committed": 10,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 6,
+        "corners": 11,
+        "ball_possession": 61,
+        "tackles": 11
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049553",
+        "lineups": "https://match.uefa.com/v5/matches/2049553/lineups"
+      }
+    },
+    "2049555": {
+      "home_stats": {
+        "goals": 0,
+        "attempts": 5,
+        "attempts_on_target": 0,
+        "passes_accuracy": 82,
+        "fouls_committed": 10,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "saves": 8,
+        "corners": 2,
+        "ball_possession": 41,
+        "tackles": 16
+      },
+      "away_stats": {
+        "goals": 2,
+        "attempts": 20,
+        "attempts_on_target": 10,
+        "passes_accuracy": 92,
+        "fouls_committed": 17,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 0,
+        "corners": 5,
+        "ball_possession": 59,
+        "tackles": 13
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049555",
+        "lineups": "https://match.uefa.com/v5/matches/2049555/lineups"
+      }
+    },
+    "2049556": {
+      "home_stats": {
+        "goals": 2,
+        "attempts": 14,
+        "attempts_on_target": 7,
+        "passes_accuracy": 89,
+        "fouls_committed": 17,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 5,
+        "corners": 4,
+        "ball_possession": 56,
+        "tackles": 17
+      },
+      "away_stats": {
+        "goals": 3,
+        "attempts": 21,
+        "attempts_on_target": 8,
+        "passes_accuracy": 84,
+        "fouls_committed": 14,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "saves": 5,
+        "corners": 5,
+        "ball_possession": 44,
+        "tackles": 21
+      },
+      "lineups": {
+        "home": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        },
+        "away": {
+          "starting_count": 11,
+          "coaches": [
+            null
+          ],
+          "lineup_status": null
+        }
+      },
+      "injuries": {
+        "home": "本场未见官方伤停通报",
+        "away": "本场未见官方伤停通报"
+      },
+      "source_urls": {
+        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049556",
+        "lineups": "https://match.uefa.com/v5/matches/2049556/lineups"
+      }
+    },
     "2049558": {
       "home_stats": {
         "goals": 1,
@@ -2620,58 +3230,6 @@
       "source_urls": {
         "stats": "https://matchstats.uefa.com/v1/team-statistics/2049558",
         "lineups": "https://match.uefa.com/v5/matches/2049558/lineups"
-      }
-    },
-    "2049564": {
-      "home_stats": {
-        "goals": 3,
-        "attempts": 17,
-        "attempts_on_target": 3,
-        "passes_accuracy": 87,
-        "fouls_committed": 13,
-        "yellow_cards": 0,
-        "red_cards": 0,
-        "saves": 2,
-        "corners": 3,
-        "ball_possession": 60,
-        "tackles": 11
-      },
-      "away_stats": {
-        "goals": 1,
-        "attempts": 10,
-        "attempts_on_target": 3,
-        "passes_accuracy": 74,
-        "fouls_committed": 13,
-        "yellow_cards": 3,
-        "red_cards": 0,
-        "saves": 0,
-        "corners": 5,
-        "ball_possession": 40,
-        "tackles": 21
-      },
-      "lineups": {
-        "home": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        },
-        "away": {
-          "starting_count": 11,
-          "coaches": [
-            null
-          ],
-          "lineup_status": null
-        }
-      },
-      "injuries": {
-        "home": "本场未见官方伤停通报",
-        "away": "本场未见官方伤停通报"
-      },
-      "source_urls": {
-        "stats": "https://matchstats.uefa.com/v1/team-statistics/2049564",
-        "lineups": "https://match.uefa.com/v5/matches/2049564/lineups"
       }
     }
   }
